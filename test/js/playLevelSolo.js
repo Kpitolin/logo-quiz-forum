@@ -5,6 +5,16 @@
  * @param  {[type]} game [description]
  * @return {[type]}      [description]
  */
+const nb_answers = 3;
+var  validation_button;
+var button;
+
+function select(item, pointer) {
+                    item.animations.play('correct');
+
+   item.setFrames(2, 1, 3);
+  }
+
 playLevelSolo = {
 
 
@@ -38,7 +48,10 @@ preload: function() {
 //We load the images and other objects from the assets
 
 game.load.image('logo', 'assets/fra_logo.png',100,32);
-game.load.image('button', 'assets/green-button-hi.png',100,32);
+game.load.image('valid_button', 'assets/green-button-hi.png',100,32);
+game.load.image('normal_button', 'assets/blue-button-hi.png',100,32);
+game.load.image('invalid_button', 'assets/red-button-hi.png',100,32);
+game.load.spritesheet('answerSheet', 'assets/spritesheet-answer.png', 100, 69);
 
 
 	
@@ -56,19 +69,73 @@ create: function ()
 
        logo_image = game.add.image(0,0,'logo');
        logo_image.position = getCenteredPosition(game.world.width,game.world.height, logo_image.getBounds().width, logo_image.getBounds().height);
-       logo_image.position.y -= offset_y;
+       logo_image.position.y -= 3*offset_y;
        var style = { font: "20px Arial", fill: "#182d3b"};
 	   header_text = game.add.text(0,0, "A quelle entreprise correspond ce logo ?", style);
 	   header_text.position.y = logo_image.position.y + 2*offset_y;
        header_text.position.x = game.world.width/2-header_text.width/2;
 
  	/*
-    Button Creation and placement
+    Answer Buttons Creation and placement
     */
 
 
-    ranking_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
-    ranking_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 2* offset_y);   
+    //Place answer sprites
+    groupAnswers = game.add.group(); //Create group for answer sprites 
+    groupAnswerText = game.add.group();
+
+
+ 
+    var i = nb_answers;
+
+    while (i>0){
+
+          
+           if (i==0) itemAnswer = groupAnswers.create(game.world.width/2-header_text.width/2,header_text.position.x+0.5*offset_y, 'answerSheet', 0);
+
+            itemAnswer = groupAnswers.create(game.world.width/2-header_text.width/2,header_text.position.x+1.5*i*offset_y, 'answerSheet', 0);
+
+            // Enable input
+            itemAnswer.inputEnabled = true;
+            itemAnswer.input.start(0, true);
+            itemAnswer.events.onInputDown.add(select);
+
+            //Add Animations
+            itemAnswer.animations.add('correct', [1, 4], 4, true);
+            itemAnswer.animations.add('false', [1, 5], 4, true);
+            itemAnswer.animations.add('hover', [1], 4, true);
+            itemAnswer.animations.add('showcorrect', [4], 4, true);
+            itemAnswer.animations.add('answerA', [0], 4, true);
+            itemAnswer.animations.add('answerB', [1], 4, true);
+            itemAnswer.animations.add('answerC', [2], 4, true);
+            itemAnswer.animations.add('answerD', [3], 4, true);
+            itemAnswer.animations.play('answerB');
+             i--;
+
+
+        }
+    
+
+  // for (var i = 0; i < nb_answers; i++) {
+  //   button[i] = game.add.button(0,0, 'normal_button', this.actionOnClick, this);
+  //   if (i!=0){
+  //         button[i].position = new PIXI.Point(solo_button.position.x,solo_button.position.y + i* offset_y/2);
+  //   }else{
+  //         button[i].position = new PIXI.Point(button[i-1]+ i* offset_y);
+
+  //   }
+  // }
+
+
+
+
+  /*
+    Answer Buttons Creation and placement
+    */
+
+
+    validation_button = game.add.button(0,0, 'normal_button', this.validationClic, this);
+    validation_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 2* offset_y);   
 
     /**
    *
@@ -82,7 +149,7 @@ create: function ()
 
     var style_textbutton = { font: "bold 12px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: solo_button.getBounds().width, align: "center" };
 
-	ranking_text = game.add.text(0,0, "Valider", style_textbutton);
+	validation_text = game.add.text(0,0, "Valider", style_textbutton);
 
 
 
@@ -90,11 +157,11 @@ create: function ()
 	/*We add the text to the buttons (we will use the local coordinate system for now on)*/
 
 
-    ranking_button.addChild(ranking_text);
+    validation_button.addChild(validation_text);
 
     /*Text positionning*/
 
-  	ranking_text.position = getCenteredPosition( ranking_button.getBounds().width, ranking_button.getBounds().height, ranking_text.getBounds().width, ranking_text.getBounds().height);
+  	validation_text.position = getCenteredPosition( validation_button.getBounds().width, validation_button.getBounds().height, validation_text.getBounds().width, validation_text.getBounds().height);
 
 
 
@@ -107,26 +174,32 @@ create: function ()
      * @param  {[type]} button [description]
      * @return {[type]}        [description]
      */
-    btnLevelClic:function(logo)
+    validationClic:function(logo)
     {
-	    game.state.start("GameTitle");
 
+      //validation_button.loadTexture("invalid_button");
+      validation_text.setText("Suivant"); 
+
+      //logo_image.kill();
+      //game.state.start("GameTitle");
 
        // game.add.tween(logo).to({x:500}, 400).start(); //change player.x to 500 over 400ms
 
         
-    }
+    },
+      select:function(item, pointer) {
+                    item.animations.play('correct');
+
+  // button.setFrames(2, 1, 3);
+  },
+
+    actionOnClick:function(button) {
+  // button.setFrames(2, 1, 3);
+  }
 
 
 
-// //Three types of timers: looping, one time event, repeat.
-// var looping = game.time.events.loop(delay, callback, context);
-// var once = game.time.events.add(delay, callback, context);
-// var repeat = game.time.events.repeat(delay, repeatCount, callback, context);
-// //You can also pass one last argument with the callback arguments
 
-// game.time.events.pause(loopingTimer);
-// game.time.events.remove(once);
 
 }
 
