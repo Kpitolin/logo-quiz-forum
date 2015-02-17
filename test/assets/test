@@ -1,0 +1,39 @@
+{
+
+"logo":[{
+		"logo-id":""
+		"img_src":"anrt.png"
+		"answer1":"SEB"
+		"answer2":"ANRT"
+		"answer3":"Hardis"
+		"correct-answer":"ANRT"
+	},
+
+	{
+		"logo-id":""
+		"img_src":"anssi.png"
+		"answer1":"ANSSI"
+		"answer2":"Egis"
+		"answer3":"Gemalto"
+		"correct-answer":"ANSSI"
+	},
+
+	{
+		"logo-id":""
+		"img_src":"arcelormittal.png"
+		"answer1":"Safran"
+		"answer2":"Allan Allaman"
+		"answer3":"Arcelormittal"
+		"correct-answer":"Arcelormittal"
+	},
+
+	{
+		"logo-id":""
+		"img_src":"areva.png"
+		"answer1":"ANRT"
+		"answer2":"Allan Allaman"
+		"answer3":"Areva"
+		"correct-answer":"Areva"
+	}
+	]
+}

@@ -91,9 +91,17 @@ create: function ()
     while (i>0){
 
           
-           if (i==0) itemAnswer = groupAnswers.create(game.world.width/2-header_text.width/2,header_text.position.x+0.5*offset_y, 'answerSheet', 0);
+           if (i==0) {
+            itemAnswer = groupAnswers.create(0,0, 'answerSheet', 0);
+            itemAnswer.position = new PIXI.Point(game.world.width/2-itemAnswer.width/2,header_text.position.y+0.5*offset_y);
+            
+          } else
+          {
+            itemAnswer = groupAnswers.create(0,0, 'answerSheet', 0);
+            itemAnswer.position = new PIXI.Point(game.world.width/2-itemAnswer.width/2,header_text.position.y+1.5*i*offset_y);
 
-            itemAnswer = groupAnswers.create(game.world.width/2-header_text.width/2,header_text.position.x+1.5*i*offset_y, 'answerSheet', 0);
+          }
+
 
             // Enable input
             itemAnswer.inputEnabled = true;
