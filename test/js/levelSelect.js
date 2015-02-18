@@ -56,13 +56,13 @@ create: function ()
     Button Creation and placement
     */
 
-    solo_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
+    solo_button = game.add.button(0,0, 'button', this.debutant, this);
     solo_button.position = getCenteredPosition(game.world.width,game.world.height, solo_button.getBounds().width, solo_button.getBounds().height);
 
-    multi_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
+    multi_button = game.add.button(0,0, 'button', this.intermediaire, this);
     multi_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + offset_y);
 
-    ranking_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
+    ranking_button = game.add.button(0,0, 'button', this.expert, this);
     ranking_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 2* offset_y);   
 
 
@@ -95,18 +95,31 @@ create: function ()
     },
 
     /**
-     * Clic sur un niveau
+     * Action when you click on a level button
      * Prépare l'interface "niveau en cours de jeu"
      * 
      * @param  {[type]} button [description]
      * @return {[type]}        [description]
      */
-    btnLevelClic:function(button)
-    {
-	    game.state.start("PlayLevelSolo");
 
-           // game.state.start("PlayLevelSolo"); // lance l'interface "niveau en cours de jeu"
-        
+
+    debutant:function(button)
+    {
+        game.global.currentLevel = 1;
+        game.state.start("PlayLevelSolo");
+
+    },
+    intermediaire:function(button)
+    {
+        game.global.currentLevel = 2;
+        game.state.start("PlayLevelSolo");
+
+    },
+    expert:function(button)
+    {
+        game.global.currentLevel = 3;
+        game.state.start("PlayLevelSolo");
+
     }
 
 

@@ -35,10 +35,13 @@ function Main()
     *
     */
 
-    // game.global{
-    // score: 0,
-    // bestScore: 100
-    // }
+    game.global = {
+
+    score: 0,
+    bestScore: 100,
+    currentLevel:0,
+    currentLogo:0
+    };
 
 
         // adding all the game screens
