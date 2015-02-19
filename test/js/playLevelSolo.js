@@ -8,14 +8,22 @@
 
  //group variables
 var groupAnswers;
-var avater;
 var groupAnswerText;
 const nb_answers = 3;
 var  validation_button;
 var button;
 var selectedAnswers = [];
 var selectedAnswerText;
+var logo_image ;
+var gameActive = false;
 
+
+
+//Timer Variables
+var selectTimer = 0; 
+var timer;
+var gameTimer = 0;
+var txtTime;
 
 
 playLevelSolo = {
@@ -134,6 +142,8 @@ create: function ()
 
 
   }
+
+
     
 
 
@@ -167,6 +177,18 @@ create: function ()
   validation_text.position = getCenteredPosition( validation_button.getBounds().width, validation_button.getBounds().height, validation_text.getBounds().width, validation_text.getBounds().height);
 
 
+    txtTime = game.add.text(20,20 , "Temps écoulé : 0", { font: "15px Arial", fill: "black" });
+    txtScore = game.add.text(20,40 , "Score : " + game.global.score, { font: "15px Arial", fill: "black" });
+    gameActive = true;
+
+    //  Set a TimerEvent to occur after 3 seconds
+    timer = this.game.time.events.loop(Phaser.Timer.SECOND, this.updateTimerCounter, this);
+    //  Start the timer running - this is important!
+    //  It won't start automatically, allowing you to hook it to button events and the like.
+
+    gameTimer = 0;
+    gameActive = true;
+
 
     },
 
@@ -177,36 +199,50 @@ create: function ()
  * @param  {[type]} button [description]
  * @return {[type]}        [description]
  */
+ update:function(){
+        selectTimer += 1;
+
+        if(selectTimer > 60*4 && !gameActive){
+          this.next();
+        }
+
+ },
   validationClic:function(button)
 
   {
-
-    // alert(getGameContent(game.global.currentLevel)[0]["img_src"]);
-      var item = groupAnswers.getAt(selectedAnswers);
+        gameActive = false;
 
 
-      if (this.correct(selectedAnswers))
+      if (selectedAnswers.length == 1 && this.correct(selectedAnswers))
       {
-        item.animations.play('correct');
+        groupAnswers.getAt(selectedAnswers).animations.play('correct');
 
       }
       else
       {
-        item.animations.play('false');
-       // groupAnswers.getAt(i).animations.play('showcorrect');
+        groupAnswers.getAt(selectedAnswers).animations.play('false');
+        groupAnswers.getAt(this.findCorrect()).animations.play('showcorrect');
 
       }
 
-
-
-    //validation_text.setText("Suivant"); 
-
-    //logo_image.kill();
-    //game.state.start("GameTitle");
-
-    // game.add.tween(logo).to({x:500}, 400).start(); //change player.x to 500 over 400ms
+      this.stop();
 
         
+  },
+
+  updateTimerCounter:function() {
+    if (gameActive)
+        gameTimer++;
+
+    txtTime.setText('Temps écoulé : ' + gameTimer);
+
+  },
+
+  stop:function(){
+
+      gameActive = false;
+
+
   },
 
   select:function(item, pointer) {
@@ -222,15 +258,14 @@ create: function ()
       for (var i = selectedAnswers.length - 1; i >= 0; i--) {
         groupAnswers.getAt(selectedAnswers[i]).play('answerD');
         selectedAnswers.splice(i,1);
-        alert(selectedAnswers[i]);
 
       };
 
     }
 
-    /**
-    *  select animation for the answer 
-    */
+        /**
+        *  select animation for the answer 
+        */
 
         item.animations.play('answerC');
         /**
@@ -238,31 +273,7 @@ create: function ()
         */
 
         selectedAnswers.push(groupAnswers.getIndex(item));       
-
       
-
-
-
-    // /**
-    // *  select animation for the answer 
-    // */
-    //   if(selectedAnswers.contains(groupAnswers.getIndex(item)+1))
-    //   {
-    //     item.animations.play('answerD');
-
-    //     selectedAnswers.splice(groupAnswers.getIndex(item),1);
-    //     alert("we remove "+selectedAnswers[i]);
-    //   }
-    //   else
-    //   {
-    //     item.animations.play('answerC');
-    //     /**
-    //     * Save selected answer
-    //     */
-
-    //     selectedAnswers.push(groupAnswers.getIndex(item));       
-
-    //   }
 
 
   },
@@ -285,9 +296,7 @@ create: function ()
   },
 
   answerIdGen:function(index){
-
-    if(typeof index=="number")
-    num = 1+index;
+    var num = 1+index*1;
     return "answer"+num;
   },
 
@@ -299,140 +308,57 @@ create: function ()
 
   correct:function(index){
 
-
-    alert(getGameContent(game.global.currentLevel)[game.global.currentLogo][this.answerIdGen(index)]);
    if (getGameContent(game.global.currentLevel)[game.global.currentLogo][this.answerIdGen(index)]
     == getGameContent(game.global.currentLevel)[game.global.currentLogo]["correct-answer"])
     {
+      game.global.score++;
      return true;
     }
+    if(game.global.score>0)
+      game.global.score--;
    return false; 
   },
+  findCorrect:function(){
 
+    for (var i = groupAnswers.length - 1; i >= 0; i--) {
+
+     if (getGameContent(game.global.currentLevel)[game.global.currentLogo][this.answerIdGen(i)]
+      == getGameContent(game.global.currentLevel)[game.global.currentLogo]["correct-answer"])
+      {
+        return i;
+      }
+
+
+    }
+    return -1;
+
+
+
+  },
   next:function(){
 
-    // //Variabelen voor de selectie van het antwoord op 0 stellen
-    // select = true;
-    // selectTimer = 0;
+    txtTime.text = 'Temps écoulé : '+0;
+
+    selectTimer = 0;
+
+    for (var i = groupAnswers.length - 1; i >= 0; i--) {
+
+        groupAnswers.getAt(i).animations.play('answerB');
+
+    };   
 
 
+    game.global.currentLogo ++;
 
-    // //Zet alle antwoord animaties weer op normaal
+    logo_image.destroy();
 
-    // groupAnswers.getAt(0).animations.play('answerB');
-    // groupAnswers.getAt(1).animations.play('answerB');
-    // groupAnswers.getAt(2).animations.play('answerB');
-    // groupAnswers.getAt(3).animations.play('answerB');
-
-    // correctAnswer = game.rnd.integerInRange(1, 4);
-
-    // var tempQuestionsList = [];
-    // var tempQuestionsListIndex;
-    // var falseAnswersList = [];
-    // var falseAnswersListIndex = 0;
-
-
-    // //Fill tempQuestionsList
-    // for (index = 0; index < questions.length; index++) {
-    //     tempQuestionsList[index] = index;
-    // }
-
-
-    // tempQuestionsList.splice(questionIndex, 1); //verwijder de huidige vraag van de indexlist  
-
-    // var string = questions[questionIndex].Question1;
-    // string = trimString(string, questionLength);
-    // textQuestion.text = string;
-    // textQuestion.fontSize = setFontsize(string.length);
-
-    // //Fill falseAnswersList
-    // for (index = 0; index < 3; index++) {
-    //     var ListLength = tempQuestionsList.length - 1;
-    //     var indexrandom = game.rnd.integerInRange(0, ListLength);
-    //     var pickAnswer = tempQuestionsList[indexrandom];
-    //     tempQuestionsList.splice(indexrandom, 1)
-    //     falseAnswersList[index] = pickAnswer;
-    // }
-
-    // if (correctAnswer == 1) {
-    //     string = questions[questionIndex].Answer1;
-    // }
-    // else {
-    //     string = questions[falseAnswersList[falseAnswersListIndex]].Answer1;
-    //     falseAnswersListIndex += 1;
-    // }
-
-    // string = trimString(string, answerLength);
-    // textA.text = string;
-    // textA.fontSize = setFontsize(string.length);
-
-    // if (correctAnswer == 2) {
-    //     string = questions[questionIndex].Answer1;
-    //     string = trimString(string, answerLength);
-    //     textB.text = string;
-    // }
-    // else {
-    //     string = questions[falseAnswersList[falseAnswersListIndex]].Answer1;
-
-    //     falseAnswersListIndex += 1;
-    // }
-
-    // string = trimString(string, answerLength);
-    // textB.text = string;
-    // textB.fontSize = setFontsize(string.length);
-
-    // if (correctAnswer == 3) {
-    //     string = questions[questionIndex].Answer1;
-    // }
-    // else {
-    //     string = questions[falseAnswersList[falseAnswersListIndex]].Answer1;
-    //     falseAnswersListIndex += 1;
-    // }
-
-    // string = trimString(string, answerLength);
-    // textC.text = string;
-    // textC.fontSize = setFontsize(string.length);
-
-
-    // if (correctAnswer == 4) {
-    //     string = questions[questionIndex].Answer1;
-    // }
-    // else {
-    //     string = questions[falseAnswersList[falseAnswersListIndex]].Answer1;
-    //     falseAnswersListIndex += 1;
-    // }
-
-    // string = trimString(string, answerLength);
-    // textD.text = string;
-    // textD.fontSize = setFontsize(string.length);
-
-    // questionSlidein = true;
-
-    // questionIndex += 1;
-    // var rest = questions.length - questionIndex;
-    // rest += 1;
-    // txtQuestionsLeft.text = rest;
-
-
-    // if (questionsPassed != 0) {
-    //     var TotalCorrect = questionsPassed - errorCounter;
-    //     ResultPercent = (TotalCorrect / questionsPassed) * 100;
-    //     ResultPercent = Math.round(ResultPercent);
-    //     textResult.text = ResultPercent + "%";
-
-    // }
-    // questionsPassed += 1;
-
-    // //controleer of er nog vragen zijn
-    // var questionsleft = questions.length - questionIndex;
-
-    // //if (questionsleft == 0)
-    // //    stop();
-
+    game.state.start('PlayLevelSolo'); 
 
 
 
   }
+
+
 
 
 

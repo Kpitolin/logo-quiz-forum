@@ -3,10 +3,11 @@
 * Constants
 */
 
-const const_offset_y_perc = 10;
+const const_offset_y_perc =10;
 
 
-
+// game.load.text('assetList','path/to/file.json') 
+// JSON.parse(game.cache.getText('assetList')); 
 
 /**
 *
