@@ -202,7 +202,7 @@ create: function ()
  update:function(){
         selectTimer += 1;
 
-        if(selectTimer > 60*4 && !gameActive){
+        if(selectTimer > 60*6 && !gameActive){
           this.next();
         }
 
