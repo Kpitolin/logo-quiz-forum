@@ -10,13 +10,13 @@
 var groupAnswers;
 var groupAnswerText;
 const nb_answers = 3;
+const delay = 6;
 var  validation_button;
 var button;
 var selectedAnswers = [];
 var selectedAnswerText;
 var logo_image ;
 var gameActive = false;
-
 
 
 //Timer Variables
@@ -49,9 +49,27 @@ init: function()
     game.scale.pageAlignVertically = true;
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.scale.setScreenSize(true);*/
-    game.stage.backgroundColor = '#ffffff';
+    game.stage.backgroundColor = '#ffffff';  // backgroundColor
 
-    //game.stage.backgroundColor = '#cccccc';// la couleur de fond du jeu
+
+    /** 
+      Choose a Logo to display randomly
+    */
+
+    if (game.global.displayeLogos===undefined){
+      game.global.displayeLogos = new Array();
+    }
+
+    var numLogo;
+    do{
+            numLogo = game.rnd.integerInRange(0, 9);
+
+    }
+    while (numLogo === undefined ||  game.global.displayeLogos.contains(numLogo));
+    game.global.currentLogo = numLogo; //the logo asked is random (challenge the user memory)
+
+
+
 },
 
 preload: function() {
@@ -68,15 +86,16 @@ game.load.spritesheet('answerSheet', 'assets/spritesheet-answer.png', 100, 69);
 	
 },
 
+
 create: function () 
 {
 
-
+    game.global.displayeLogos.push(game.global.currentLogo);
 	
 	/*
     Header Creation and placement
     */
-   
+    
 
      logo_image = game.add.image(0,0,'logo');
      logo_image.position = getCenteredPosition(game.world.width,game.world.height, logo_image.getBounds().width, logo_image.getBounds().height);
@@ -176,7 +195,7 @@ create: function ()
 
   validation_text.position = getCenteredPosition( validation_button.getBounds().width, validation_button.getBounds().height, validation_text.getBounds().width, validation_text.getBounds().height);
 
-
+    // Timer text creation
     txtTime = game.add.text(20,20 , "Temps écoulé : 0", { font: "15px Arial", fill: "black" });
     txtScore = game.add.text(20,40 , "Score : " + game.global.score, { font: "15px Arial", fill: "black" });
     gameActive = true;
@@ -200,11 +219,25 @@ create: function ()
  * @return {[type]}        [description]
  */
  update:function(){
+
+
+
+        // Optimize this with a timer
+
         selectTimer += 1;
 
-        if(selectTimer > 60*6 && !gameActive){
+        if(selectTimer > 60*delay && !gameActive){
           this.next();
         }
+
+        // if(!gameActive){
+          
+        //   var once = game.time.events.add(60*delay, this.next(), this);
+
+
+        // }
+
+
 
  },
   validationClic:function(button)
@@ -318,6 +351,8 @@ create: function ()
       game.global.score--;
    return false; 
   },
+
+
   findCorrect:function(){
 
     for (var i = groupAnswers.length - 1; i >= 0; i--) {

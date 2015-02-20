@@ -40,7 +40,8 @@ function Main()
     score: 0,
     bestScore: 100,
     currentLevel:0,
-    currentLogo:0
+    currentLogo:0,
+    displayedLogos: []
     };
 
 
