@@ -69,12 +69,13 @@ init: function()
     game.global.currentLogo = numLogo; //the logo asked is random (challenge the user memory)
 
 
+    selectedAnswers.remove();
 
 },
 
 preload: function() {
 
-//We load the images and other objects from the assets
+// We load the images and other objects from the assets
 
 game.load.image('logo', this.logoToLoad(),100,32);
 game.load.image('valid_button', 'assets/green-button-hi.png',100,32);
