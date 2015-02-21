@@ -164,7 +164,7 @@ var debutant =
 		"img_src":"blueinfinty.png",
 		"answer1":"Blue Infinity",
 		"answer2":"Chec",
-		"answer3":"GFInformatique",
+		"answer3":"GFI Informatique",
 		"correct-answer":"Blue Infinity"
 	},
 	{
@@ -193,7 +193,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"bouyguescontruction.png",
+		"img_src":"bouyguesconstruction.png",
 		"answer1":"Fiducial",
 		"answer2":"Ikos",
 		"answer3":"Bouygues Contruction",
@@ -334,11 +334,11 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"espceurope.png",
-		"answer1":"ESPC Europe",
+		"img_src":"escpeurope.png",
+		"answer1":"ESCP Europe",
 		"answer2":"Telindus",
 		"answer3":"Swissquote",
-		"correct-answer":"ESPC Europe"
+		"correct-answer":"ESCP Europe"
 	},
 
 	{
@@ -398,11 +398,11 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GFInformatique.png",
-		"answer1":"GF Informatique",
+		"img_src":"gfi.png",
+		"answer1":"GFI Informatique",
 		"answer2":"SPC Consultants",
 		"answer3":"Tata Consultancy Services",
-		"correct-answer":"GF Informatique"
+		"correct-answer":"GFI Informatique"
 	},
 
 	{
