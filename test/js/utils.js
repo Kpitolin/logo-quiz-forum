@@ -1,4 +1,4 @@
-
+ï»¿
 /**
 * Constants
 */
@@ -146,8 +146,8 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"axon.png",
-		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer1":"Vulcain IngÃ©nierie",
+		"answer2":"CrÃ©dit Agricol Du Maroc",
 		"answer3":"Axon",
 		"correct-answer":"Axon"
 	},
@@ -161,10 +161,10 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"blueinfinty.png",
+		"img_src":"blueinfinity.png",
 		"answer1":"Blue Infinity",
 		"answer2":"Chec",
-		"answer3":"GFInformatique",
+		"answer3":"GFI Informatique",
 		"correct-answer":"Blue Infinity"
 	},
 	{
@@ -193,7 +193,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"bouyguescontruction.png",
+		"img_src":"bouyguesconstruction.png",
 		"answer1":"Fiducial",
 		"answer2":"Ikos",
 		"answer3":"Bouygues Contruction",
@@ -236,10 +236,10 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"CreditAgricolDuMaroc.png",
-		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer1":"Vulcain IngÃ©nierie",
+		"answer2":"CrÃ©dit Agricol Du Maroc",
 		"answer3":"Setec",
-		"correct-answer":"Crédit Agricol Du Maroc"
+		"correct-answer":"CrÃ©dit Agricol Du Maroc"
 	},
 	{
 		"logo-id":"",
@@ -293,7 +293,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"ekium.png",
 		"answer1":"Groupe Atlantic",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"CrÃ©dit Agricol Du Maroc",
 		"answer3":"Ekium",
 		"correct-answer":"Ekium"
 	},
@@ -334,11 +334,11 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"espceurope.png",
-		"answer1":"ESPC Europe",
+		"img_src":"escpeurope.png",
+		"answer1":"ESCP Europe",
 		"answer2":"Telindus",
 		"answer3":"Swissquote",
-		"correct-answer":"ESPC Europe"
+		"correct-answer":"ESCP Europe"
 	},
 
 	{
@@ -352,7 +352,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"EuroInformatique.png",
+		"img_src":"EuroInformation.png",
 		"answer1":"IE Business School",
 		"answer2":"Ensam",
 		"answer3":"Euro Information",
@@ -398,17 +398,17 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GFInformatique.png",
-		"answer1":"GF Informatique",
+		"img_src":"gfi.png",
+		"answer1":"GFI Informatique",
 		"answer2":"SPC Consultants",
 		"answer3":"Tata Consultancy Services",
-		"correct-answer":"GF Informatique"
+		"correct-answer":"GFI Informatique"
 	},
 
 	{
 		"logo-id":"",
 		"img_src":"GrenobleEM.png",
-		"answer1":"Generali",
+		"answer1":"Generaldi",
 		"answer2":"Gemalto",
 		"answer3":"Grenoble EM",
 		"correct-answer":"Grenoble EM"
@@ -447,7 +447,7 @@ var debutant =
 		"answer1":"Asymptote",
 		"answer2":"Royal Air Maroc",
 		"answer3":"Attijariwafa Bank",
-		"correct-answer":"Aussy"
+		"correct-answer":"Royal Air Maroc"
 	},
 
 	{
@@ -773,11 +773,11 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"VulcainIngénierie.png",
+		"img_src":"VulcainIngÃ©nierie.png",
 		"answer1":"Veolia",
 		"answer2":"Vinci",
-		"answer3":"Vulcain Ingénierie",
-		"correct-answer":"Vulcain Ingénierie"
+		"answer3":"Vulcain IngÃ©nierie",
+		"correct-answer":"Vulcain IngÃ©nierie"
 	},
 	{
 		"logo-id":"",
