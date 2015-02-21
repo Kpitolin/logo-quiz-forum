@@ -78,7 +78,7 @@ preload: function() {
 game.load.text('assetList','assets/complete.json');
 
 game.load.image('logo', this.logoToLoad(),100,32); // 100,32
-game.load.image('valid_button', 'assets/green-button-hi.png',100,32); // 100,32
+//game.load.image('valid_button', 'assets/green-button-hi.png',100,32); // 100,32
 game.load.image('normal_button', 'assets/blue-button-hi.png',100,32); // 100,32
 game.load.image('invalid_button', 'assets/red-button-hi.png',100,32); // 100,32
 game.load.spritesheet('answerSheet', 'assets/cadre.png', 200, 50); //100,32 spritesheet-answer.png
@@ -173,8 +173,8 @@ create: function ()
     */
 
 
-  validation_button = game.add.button(0,0, 'normal_button', this.validationClic, this);
-  validation_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 4* offset_y);  // here use the position of the n element of the group  
+  //validation_button = game.add.button(0,0, 'normal_button', this.validationClic, this);
+  //validation_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 4* offset_y);  // here use the position of the n element of the group  
 
 
   /*
@@ -183,15 +183,15 @@ create: function ()
 
   var style_textbutton = { font: "bold 12px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: solo_button.getBounds().width, align: "center" };
 
-	validation_text = game.add.text(0,0, "Valider", style_textbutton);
+	//validation_text = game.add.text(0,0, "Valider", style_textbutton);
 
 	/*We add the text to the buttons (we will use the local coordinate system for now on)*/
 
-  validation_button.addChild(validation_text);
+ // validation_button.addChild(validation_text);
 
   /*Text positionning*/
 
-  validation_text.position = getCenteredPosition( validation_button.getBounds().width, validation_button.getBounds().height, validation_text.getBounds().width, validation_text.getBounds().height);
+ // validation_text.position = getCenteredPosition( validation_button.getBounds().width, validation_button.getBounds().height, validation_text.getBounds().width, validation_text.getBounds().height);
 
     // Timer text creation
     txtTime = game.add.text(20,20 , "Temps écoulé : 0", { font: "15px Arial", fill: "black" });
@@ -227,7 +227,8 @@ create: function ()
 
         }
 
-        if(selectTimer > 60*delay && !gameActive){
+
+        if(selectTimer > 60*delay && !gameActive ){
           this.next();
         }
 
@@ -235,34 +236,13 @@ create: function ()
 
 
  },
-  validationClic:function(button)
+  // validationClic:function(button)
 
-  {
-        gameActive = false;
+  // {
 
-
-      if (selectedAnswers.length == 1 && this.correct(selectedAnswers))
-      {
-        groupAnswers.getAt(selectedAnswers).animations.play('correct');
-
-      }
-      else if (selectedAnswers.length !=0 )
-      {
-        groupAnswers.getAt(selectedAnswers).animations.play('false');
-        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
-
-
-      }
-      else
-      {
-        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
-
-      }
-
-      this.stop();
 
         
-  },
+  // },
 
   updateTimerCounter:function() {
     if (gameActive)
@@ -297,6 +277,8 @@ create: function ()
 
     }
 
+
+
         /**
         *  select animation for the answer 
         */
@@ -306,7 +288,35 @@ create: function ()
         * Save selected answer
         */
 
-        selectedAnswers.push(groupAnswers.getIndex(item));       
+        selectedAnswers.push(groupAnswers.getIndex(item));  
+
+
+        /**
+        * Validation part
+        */
+
+      gameActive = false;
+
+
+      if (selectedAnswers.length == 1 && this.correct(selectedAnswers))
+      {
+        groupAnswers.getAt(selectedAnswers).animations.play('correct');
+
+      }
+      else if (selectedAnswers.length !=0 )
+      {
+        groupAnswers.getAt(selectedAnswers).animations.play('false');
+        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+
+      }
+      else
+      {
+        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+      }
+
+      this.stop();     
       
 
 
