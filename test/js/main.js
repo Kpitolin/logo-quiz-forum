@@ -50,7 +50,7 @@ function Main()
     game.state.add("GameTitle", gameTitle);
     game.state.add("LevelSelect", levelSelect);
     game.state.add("PlayLevelSolo", playLevelSolo);    
-    game.state.add("ScorePresentation", scorePresentation);
+    //game.state.add("ScorePresentation", scorePresentation);
 
     // Start the first screen (chargement en cours)
     game.state.start("GameTitle");
