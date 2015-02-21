@@ -6,7 +6,7 @@
  */
 
 
-scorePresentation = {
+score = {
 
 
 /**

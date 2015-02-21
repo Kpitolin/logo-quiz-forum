@@ -11,7 +11,6 @@ var groupAnswers;
 var groupAnswerText;
 const nb_answers = 3;
 const delay = 3;
-var  validation_button;
 var button;
 var selectedAnswers = [];
 var selectedAnswerText;
@@ -20,8 +19,11 @@ var gameActive = false;
 
 
 //Timer Variables
-var selectTimer = 0; 
 var timer;
+var timer2;
+var timer3;
+var timer4;
+
 var gameTimer = 0;
 var txtTime;
 
@@ -75,12 +77,9 @@ init: function()
 preload: function() {
 
 // We load the images and other objects from the assets
-game.load.text('assetList','assets/complete.json');
+//game.load.text('assetList','assets/complete.json');
 
 game.load.image('logo', this.logoToLoad(),100,32); // 100,32
-//game.load.image('valid_button', 'assets/green-button-hi.png',100,32); // 100,32
-game.load.image('normal_button', 'assets/blue-button-hi.png',100,32); // 100,32
-game.load.image('invalid_button', 'assets/red-button-hi.png',100,32); // 100,32
 game.load.spritesheet('answerSheet', 'assets/cadre.png', 200, 50); //100,32 spritesheet-answer.png
 
 
@@ -91,7 +90,7 @@ game.load.spritesheet('answerSheet', 'assets/cadre.png', 200, 50); //100,32 spri
 create: function () 
 {
 
-    game.global.displayeLogos.push(game.global.currentLogo);
+    game.global.displayedLogos.push(game.global.currentLogo);
 	
 	/*
     Header Creation and placement
@@ -161,20 +160,9 @@ create: function ()
   }
 
 
-    
-
-
   this.updateAnswerTexts();
 
 
-
-  /*
-    Validation Button Creation and placement
-    */
-
-
-  //validation_button = game.add.button(0,0, 'normal_button', this.validationClic, this);
-  //validation_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 4* offset_y);  // here use the position of the n element of the group  
 
 
   /*
@@ -183,66 +171,49 @@ create: function ()
 
   var style_textbutton = { font: "bold 12px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: solo_button.getBounds().width, align: "center" };
 
-	//validation_text = game.add.text(0,0, "Valider", style_textbutton);
 
-	/*We add the text to the buttons (we will use the local coordinate system for now on)*/
-
- // validation_button.addChild(validation_text);
-
-  /*Text positionning*/
-
- // validation_text.position = getCenteredPosition( validation_button.getBounds().width, validation_button.getBounds().height, validation_text.getBounds().width, validation_text.getBounds().height);
 
     // Timer text creation
     txtTime = game.add.text(20,20 , "Temps écoulé : 0", { font: "15px Arial", fill: "black" });
     txtScore = game.add.text(20,40 , "Score : " + game.global.score, { font: "15px Arial", fill: "black" });
     gameActive = true;
 
-    //  Set a TimerEvent to occur after 3 seconds
+    //  Set a TimerEvent
     timer = this.game.time.events.loop(Phaser.Timer.SECOND, this.updateTimerCounter, this);
-    //  Start the timer running - this is important!
-    //  It won't start automatically, allowing you to hook it to button events and the like.
+
+
+
+    // Second timer (deay for correction after selection)
+    timer2 = game.time.create(false);
+
+    timer2.add(Phaser.Timer.SECOND , this.validation , this);
+
+
+
+    // Third timer (deay for pass to next element)
+    timer3 = game.time.create(false);
+
+    timer3.add(Phaser.Timer.SECOND*2 , this.next , this);
+
+
 
     gameTimer = 0;
     gameActive = true;
 
 
+    // The user has game.global.answer_delay seconds to answer
+
+    timer4 = game.time.create(false);
+
+    timer4.add(Phaser.Timer.SECOND*game.global.answer_delay , this.validation , this);
+
+    timer4.start();
+
+
+
     },
 
-/**
- * Clic on validation button
- * 
- * 
- * @param  {[type]} button [description]
- * @return {[type]}        [description]
- */
- update:function(){
 
-
-
-        // Optimize this with a timer
-
-        if (!gameActive){
-                  selectTimer += 1;
-
-        }
-
-
-        if(selectTimer > 60*delay && !gameActive ){
-          this.next();
-        }
-
-
-
-
- },
-  // validationClic:function(button)
-
-  // {
-
-
-        
-  // },
 
   updateTimerCounter:function() {
     if (gameActive)
@@ -258,6 +229,8 @@ create: function ()
 
 
   },
+
+
 
   select:function(item, pointer) {
 
@@ -293,34 +266,13 @@ create: function ()
 
         /**
         * Validation part
-        */
-
-      gameActive = false;
+        */        
 
 
-      if (selectedAnswers.length == 1 && this.correct(selectedAnswers))
-      {
-        groupAnswers.getAt(selectedAnswers).animations.play('correct');
-
-      }
-      else if (selectedAnswers.length !=0 )
-      {
-        groupAnswers.getAt(selectedAnswers).animations.play('false');
-        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
-
-
-      }
-      else
-      {
-        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
-
-      }
-
-      this.stop();     
-      
-
+        timer2.start();
 
   },
+
 
   updateAnswerTexts:function(){
 
@@ -381,8 +333,20 @@ create: function ()
 
 
   },
+
   next:function(){
 
+
+    /*
+      Empty the selected answers array 
+    */
+
+    selectedAnswers = [];
+
+
+    // RESET THE TIMER TEXT
+
+    
     txtTime.text = 'Temps écoulé : '+0;
 
     selectTimer = 0;
@@ -403,10 +367,44 @@ create: function ()
     game.global.currentProgress ++;
 
     if (game.global.currentProgress==10){
-        game.state.start("scorePresentation");
+        game.state.start("score");
 
     }
 
+
+
+  },
+
+  validation:function (){
+
+
+          gameActive = false;
+
+         if (selectedAnswers.length == 1 && this.correct(selectedAnswers))
+          {
+            groupAnswers.getAt(selectedAnswers).animations.play('correct');
+
+          }
+          else if (selectedAnswers.length !=0 )
+          {
+            groupAnswers.getAt(selectedAnswers).animations.play('false');
+            groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+
+          }
+          else
+          {
+            groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+          }
+
+
+      // We pause the timer for next element
+
+      this.stop(); 
+
+      // We fire the timer for next element
+      timer3.start();
 
 
   }
