@@ -146,8 +146,8 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"axon.png",
-		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer1":"Vulcain IngÃ©nierie",
+		"answer2":"CrÃ©dit Agricol Du Maroc",
 		"answer3":"Axon",
 		"correct-answer":"Axon"
 	},
@@ -236,10 +236,10 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"CreditAgricolDuMaroc.png",
-		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer1":"Vulcain IngÃ©nierie",
+		"answer2":"CrÃ©dit Agricol Du Maroc",
 		"answer3":"Setec",
-		"correct-answer":"Crédit Agricol Du Maroc"
+		"correct-answer":"CrÃ©dit Agricol Du Maroc"
 	},
 	{
 		"logo-id":"",
@@ -293,7 +293,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"ekium.png",
 		"answer1":"Groupe Atlantic",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"CrÃ©dit Agricol Du Maroc",
 		"answer3":"Ekium",
 		"correct-answer":"Ekium"
 	},
@@ -408,7 +408,7 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"GrenobleEM.png",
-		"answer1":"Generali",
+		"answer1":"Generaldi",
 		"answer2":"Gemalto",
 		"answer3":"Grenoble EM",
 		"correct-answer":"Grenoble EM"
@@ -773,11 +773,11 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"VulcainIngénierie.png",
+		"img_src":"VulcainIngÃ©nierie.png",
 		"answer1":"Veolia",
 		"answer2":"Vinci",
-		"answer3":"Vulcain Ingénierie",
-		"correct-answer":"Vulcain Ingénierie"
+		"answer3":"Vulcain IngÃ©nierie",
+		"correct-answer":"Vulcain IngÃ©nierie"
 	},
 	{
 		"logo-id":"",
