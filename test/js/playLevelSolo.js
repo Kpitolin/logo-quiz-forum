@@ -62,14 +62,14 @@ init: function()
 
     var numLogo;
     do{
-            numLogo = game.rnd.integerInRange(0, 9);
+            numLogo = game.rnd.integerInRange(0, 100);
 
     }
     while (numLogo === undefined ||  game.global.displayeLogos.contains(numLogo));
     game.global.currentLogo = numLogo; //the logo asked is random (challenge the user memory)
 
 
-    selectedAnswers.remove();
+   // selectedAnswers.remove();  // 
 
 },
 
@@ -252,12 +252,11 @@ create: function ()
         groupAnswers.getAt(selectedAnswers).animations.play('correct');
 
       }
-      else
+      else if (selectedAnswers.length !=0 )
       {
         groupAnswers.getAt(selectedAnswers).animations.play('false');
-        groupAnswers.getAt(this.findCorrect()).animations.play('showcorrect');
 
-      }
+      }else
 
       this.stop();
 
@@ -389,6 +388,8 @@ create: function ()
     logo_image.destroy();
 
     game.state.start('PlayLevelSolo'); 
+
+    currentProgress ++;
 
 
 

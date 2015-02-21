@@ -41,7 +41,8 @@ function Main()
     bestScore: 100,
     currentLevel:0,
     currentLogo:0,
-    displayedLogos: []
+    displayedLogos: [],
+    currentProgress:0
     };
 
 
@@ -49,12 +50,7 @@ function Main()
     game.state.add("GameTitle", gameTitle);
     game.state.add("LevelSelect", levelSelect);
     game.state.add("PlayLevelSolo", playLevelSolo);    
-    // game.state.add("PlayMulti", multi);
-    // game.state.add("Stats", stats);
-    // game.state.add("Options", options);
-
-
-
+    game.state.add("ScorePresentation", scorePresentation);
 
     // Start the first screen (chargement en cours)
     game.state.start("GameTitle");

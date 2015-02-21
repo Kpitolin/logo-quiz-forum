@@ -36,8 +36,6 @@ gameTitle = {
  */
 
 
-
-
 init: function()
 {
     //show the screen in full screen 
@@ -148,38 +146,4 @@ create: function ()
 
 }
 
-      // //  affiche un effet de blocage sur la miniature du niveau concerné
-     
-      //       var buttonTween = game.add.tween(button)
-      //       buttonTween.to({alpha: 0.5}, 20, Phaser.Easing.Cubic.None);
-      //       buttonTween.to({alpha: 1}, 20, Phaser.Easing.Cubic.None);
-      //       buttonTween.to({alpha: 0.5}, 20, Phaser.Easing.Cubic.None);
-      //       buttonTween.to({alpha: 1}, 20, Phaser.Easing.Cubic.None);
-      //       buttonTween.start();
-
-// panel.prototype = Object.create(Phaser.Group.prototype);
-// PausePanel.constructor = panel;
-
-// panel.prototype.show = function(){
-//     this.game.add.tween(this).to({y:0}, 500, Phaser.Easing.Bounce.Out, true);
-// };
-// panel.prototype.hide = function(){
-//     this.game.add.tween(this).to({y:-100}, 200, Phaser.Easing.Linear.NONE, true);
-// };
-
-    // Create our  panel extending Phaser.Group
-// var panel = function(game, parent){
-//     // Super call to Phaser.Group
-//     Phaser.Group.call(this, game, parent);
-
-//     // Add the panel
-//     panel = this.create(this.game.width/2, 10, 'panel');
-//     this.panel.anchor.setTo(0.5, 0);
-
-//     // Add text
-//     this.pauseText = this.game.add.text(100, 20, 'text', style_textbutton);
-//     this.add(this.pauseText);
-//     };
-
-//     this.panel = new panel(this.game);
-//     this.game.add.existing(this.panel);
+    
