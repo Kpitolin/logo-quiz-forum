@@ -37,7 +37,7 @@ var debutant =
 	
 	{
 		"logo-id":"",
-		"img_src":"allanallaman.png",
+		"img_src":"alanallman.png",
 		"answer1":"Allan Allaman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
@@ -177,11 +177,11 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"broccard.png",
+		"img_src":"boccard.png",
 		"answer1":"Capgemini",
 		"answer2":"Dimogestion",
-		"answer3":"Brocard",
-		"correct-answer":"Broccard"
+		"answer3":"Boccard",
+		"correct-answer":"Boccard"
 	},
 	{
 		"logo-id":"",
@@ -426,7 +426,7 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"GroupeAtlantic.png",
-		"answer1":"Broccard",
+		"answer1":"Boccard",
 		"answer2":"Atlantic",
 		"answer3":"Blue Infinity",
 		"correct-answer":"Atlantic"

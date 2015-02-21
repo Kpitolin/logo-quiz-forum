@@ -10,7 +10,7 @@
 var groupAnswers;
 var groupAnswerText;
 const nb_answers = 3;
-const delay = 6;
+const delay = 3;
 var  validation_button;
 var button;
 var selectedAnswers = [];
@@ -62,7 +62,7 @@ init: function()
 
     var numLogo;
     do{
-            numLogo = game.rnd.integerInRange(0, 9);
+            numLogo = game.rnd.integerInRange(0, 100);
 
     }
     while (numLogo === undefined ||  game.global.displayeLogos.contains(numLogo));
@@ -150,12 +150,9 @@ create: function ()
     itemAnswer.events.onInputDown.add(this.select);
 
     //Add Animations 'nom', 'couleurclignote','secondepourclignotement'
-    itemAnswer.animations.add('correct', [2, 0], 4, true); 
-    itemAnswer.animations.add('false', [2, 1], 4, true);
-    itemAnswer.animations.add('hover', [2], 4, true);
+    itemAnswer.animations.add('correct', [3, 0], 4, true); 
+    itemAnswer.animations.add('false', [3, 1], 4, true);
     itemAnswer.animations.add('showcorrect', [0], 4, true);
-    // itemAnswer.animations.add('answerA', [2], 0, true); // OSEF
-    // itemAnswer.animations.add('answerB', [2], 0, true); // OSEF
     itemAnswer.animations.add('answerC', [2], 4, true); // NORMAL AVEC SELECTION
     itemAnswer.animations.add('answerD', [3], 4, true); // NORMAL SANS SELECTION
     i++;
@@ -225,18 +222,15 @@ create: function ()
 
         // Optimize this with a timer
 
-        selectTimer += 1;
+        if (!gameActive){
+                  selectTimer += 1;
+
+        }
 
         if(selectTimer > 60*delay && !gameActive){
           this.next();
         }
 
-        // if(!gameActive){
-          
-        //   var once = game.time.events.add(60*delay, this.next(), this);
-
-
-        // }
 
 
 
@@ -255,8 +249,15 @@ create: function ()
       else if (selectedAnswers.length !=0 )
       {
         groupAnswers.getAt(selectedAnswers).animations.play('false');
+        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
 
-      }else
+
+      }
+      else
+      {
+        groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+      }
 
       this.stop();
 
@@ -378,7 +379,7 @@ create: function ()
 
     for (var i = groupAnswers.length - 1; i >= 0; i--) {
 
-        groupAnswers.getAt(i).animations.play('answerB');
+        groupAnswers.getAt(i).animations.play('answerD');
 
     };   
 
