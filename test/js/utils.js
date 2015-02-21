@@ -161,7 +161,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"blueinfinty.png",
+		"img_src":"blueinfinity.png",
 		"answer1":"Blue Infinity",
 		"answer2":"Chec",
 		"answer3":"GFI Informatique",
@@ -352,7 +352,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"EuroInformatique.png",
+		"img_src":"EuroInformation.png",
 		"answer1":"IE Business School",
 		"answer2":"Ensam",
 		"answer3":"Euro Information",
