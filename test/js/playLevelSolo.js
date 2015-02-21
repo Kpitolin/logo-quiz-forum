@@ -69,7 +69,6 @@ init: function()
     game.global.currentLogo = numLogo; //the logo asked is random (challenge the user memory)
 
 
-   // selectedAnswers.remove();  // 
 
 },
 
@@ -77,11 +76,11 @@ preload: function() {
 
 // We load the images and other objects from the assets
 
-game.load.image('logo', this.logoToLoad(),100,32);
-game.load.image('valid_button', 'assets/green-button-hi.png',100,32);
-game.load.image('normal_button', 'assets/blue-button-hi.png',100,32);
-game.load.image('invalid_button', 'assets/red-button-hi.png',100,32);
-game.load.spritesheet('answerSheet', 'assets/spritesheet-answer.png', 100, 69);
+game.load.image('logo', this.logoToLoad(),100,32); // 100,32
+game.load.image('valid_button', 'assets/green-button-hi.png',100,32); // 100,32
+game.load.image('normal_button', 'assets/blue-button-hi.png',100,32); // 100,32
+game.load.image('invalid_button', 'assets/red-button-hi.png',100,32); // 100,32
+game.load.spritesheet('answerSheet', 'assets/cadre.png', 200, 50); //100,32 spritesheet-answer.png
 
 
 	
@@ -149,16 +148,16 @@ create: function ()
     itemAnswer.input.start(0, true);
     itemAnswer.events.onInputDown.add(this.select);
 
-    //Add Animations
-    itemAnswer.animations.add('correct', [1, 4], 4, true);
-    itemAnswer.animations.add('false', [1, 5], 4, true);
-    itemAnswer.animations.add('hover', [1], 4, true);
-    itemAnswer.animations.add('showcorrect', [4], 4, true);
-    itemAnswer.animations.add('answerA', [0], 4, true);
-    itemAnswer.animations.add('answerB', [1], 4, true);
-    itemAnswer.animations.add('answerC', [2], 4, true);
-    itemAnswer.animations.add('answerD', [3], 4, true);
-     i++;
+    //Add Animations 'nom', 'couleurclignote','secondepourclignotement'
+    itemAnswer.animations.add('correct', [2, 0], 4, true); 
+    itemAnswer.animations.add('false', [2, 1], 4, true);
+    itemAnswer.animations.add('hover', [2], 4, true);
+    itemAnswer.animations.add('showcorrect', [0], 4, true);
+    // itemAnswer.animations.add('answerA', [2], 0, true); // OSEF
+    // itemAnswer.animations.add('answerB', [2], 0, true); // OSEF
+    itemAnswer.animations.add('answerC', [2], 4, true); // NORMAL AVEC SELECTION
+    itemAnswer.animations.add('answerD', [3], 4, true); // NORMAL SANS SELECTION
+    i++;
 
 
   }
@@ -316,7 +315,7 @@ create: function ()
     var itemAnswer;
 
     for (var i = groupAnswers.length - 1; i >= 0; i--) {
-             var style = { font: "15px Times New Roman", fill: 'white'};
+             var style = { font: "15px Times New Roman", fill: 'black'};
 
             itemAnswer = groupAnswers.getAt(i);
             text = game.add.text(0, 0,getGameContent(game.global.currentLevel)[game.global.currentLogo][this.answerIdGen(i)], style);
