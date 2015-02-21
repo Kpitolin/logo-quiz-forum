@@ -224,10 +224,10 @@ create: function ()
 
 
         // Optimize this with a timer
-
+		if (!gameActive){
         selectTimer += 1;
-
-        if(selectTimer > 60*delay && !gameActive){
+		}
+        if(selectTimer > 60*delay && !gameActive ){
           this.next();
         }
 

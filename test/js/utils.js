@@ -37,11 +37,11 @@ var debutant =
 	
 	{
 		"logo-id":"",
-		"img_src":"allanallaman.png",
-		"answer1":"Allan Allaman",
+		"img_src":"alanallaman.png",
+		"answer1":"Alan Allaman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
-		"correct-answer":"Allan Allaman"
+		"correct-answer":"Alan Allaman"
 	},
 
 	{
@@ -75,7 +75,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"arcelormittal.png",
 		"answer1":"Safran",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allaman",
 		"answer3":"Arcelormittal",
 		"correct-answer":"Arcelormittal"
 	},
@@ -84,7 +84,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"areva.png",
 		"answer1":"ANRT",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allaman",
 		"answer3":"Areva",
 		"correct-answer":"Areva"
 	},
@@ -111,7 +111,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"asymptote.png",
 		"answer1":"Asymptote",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allaman",
 		"answer3":"Ausy",
 		"correct-answer":"Asymptote"
 	},
@@ -138,7 +138,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"avanade.png",
 		"answer1":"ANRT",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allaman",
 		"answer3":"Avanade",
 		"correct-answer":"Avanade"
 	},
