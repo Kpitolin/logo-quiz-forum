@@ -316,7 +316,7 @@ function getGameContent(level){
 
 	if(level == 1)
 	{
-		 return JSON.parse(game.cache.getText('assetList'));
+		// return JSON.parse(game.cache.getText('assetList'));
 		return debutant;
 	}
 	else if(level == 2)
