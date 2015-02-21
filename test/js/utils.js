@@ -447,7 +447,7 @@ var debutant =
 		"answer1":"Asymptote",
 		"answer2":"Royal Air Maroc",
 		"answer3":"Attijariwafa Bank",
-		"correct-answer":"Aussy"
+		"correct-answer":"Royal Air Maroc"
 	},
 
 	{
