@@ -62,7 +62,7 @@ init: function()
 
     var numLogo;
     do{
-            numLogo = game.rnd.integerInRange(0, 100);
+            numLogo = game.rnd.integerInRange(0, 9);
 
     }
     while (numLogo === undefined ||  game.global.displayeLogos.contains(numLogo));
@@ -75,6 +75,7 @@ init: function()
 preload: function() {
 
 // We load the images and other objects from the assets
+game.load.text('assetList','assets/complete.json');
 
 game.load.image('logo', this.logoToLoad(),100,32); // 100,32
 game.load.image('valid_button', 'assets/green-button-hi.png',100,32); // 100,32
@@ -388,7 +389,12 @@ create: function ()
 
     game.state.start('PlayLevelSolo'); 
 
-    currentProgress ++;
+    game.global.currentProgress ++;
+
+    if (game.global.currentProgress==10){
+        game.state.start("scorePresentation");
+
+    }
 
 
 
