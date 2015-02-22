@@ -67,7 +67,7 @@ init: function()
             numLogo = game.rnd.integerInRange(0, 100);
 
     }
-    while (numLogo === undefined ||  game.global.displayeLogos.contains(numLogo));
+    while (numLogo === undefined ||  game.global.displayedLogos.contains(numLogo));
     game.global.currentLogo = numLogo; //the logo asked is random (challenge the user memory)
 
 

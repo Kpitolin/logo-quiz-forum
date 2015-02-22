@@ -106,21 +106,21 @@ create: function ()
     debutant:function(button)
     {
         game.global.currentLevel = 1;
-        game.global.answer_delay = 15;
+        game.global.answer_delay = 10;
         game.state.start("PlayLevelSolo");
 
     },
     intermediaire:function(button)
     {
         game.global.currentLevel = 1;
-        game.global.answer_delay = 10;
+        game.global.answer_delay = 5;
         game.state.start("PlayLevelSolo");
 
     },
     expert:function(button)
     {
         game.global.currentLevel = 1;
-        game.global.answer_delay = 5;
+        game.global.answer_delay = 3;
         game.state.start("PlayLevelSolo");
 
     }
