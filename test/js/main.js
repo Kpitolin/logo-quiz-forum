@@ -8,8 +8,8 @@
 
 var game; 
 
-var gWidth = 800;
-var gHeight = 600;
+var gWidth = screen.width;
+var gHeight = screen.height;
 
 
 document.addEventListener("DOMContentLoaded", Main, false); // appel au chargement de la page
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", Main, false); // appel au chargeme
 function Main()
 {
 
-    game = new Phaser.Game(gWidth, gHeight, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+    game = new Phaser.Game(gWidth, gHeight, Phaser.CANVAS, '', { preload: preload, create: create, update: update });
 
 
     /**

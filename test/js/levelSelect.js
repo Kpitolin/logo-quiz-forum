@@ -24,11 +24,11 @@ levelSelect = {
 init: function()
 {
     //show the screen in full screen 
-    /*
+    
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    game.scale.setScreenSize(true);*/
+    game.scale.setScreenSize(true);
     game.stage.backgroundColor = '#ffffff';
 
    // game.stage.backgroundColor = '#cccccc';// la couleur de fond du jeu
