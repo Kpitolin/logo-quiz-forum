@@ -131,7 +131,7 @@
 		"logo-id":"",
 		"img_src":"axon.PNG",
 		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"Crédit Agricole Du Maroc",
 		"answer3":"Axon",
 		"correct-answer":"Axon"
 	},
@@ -221,9 +221,9 @@
 		"logo-id":"",
 		"img_src":"CreditAgricolDuMaroc.PNG",
 		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"Crédit Agricole Du Maroc",
 		"answer3":"Setec",
-		"correct-answer":"Crédit Agricol Du Maroc"
+		"correct-answer":"Crédit Agricole Du Maroc"
 	},
 	{
 		"logo-id":"",
@@ -277,7 +277,7 @@
 		"logo-id":"",
 		"img_src":"ekium.PNG",
 		"answer1":"Groupe Atlantic",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"Crédit Agricole Du Maroc",
 		"answer3":"Ekium",
 		"correct-answer":"Ekium"
 	},
