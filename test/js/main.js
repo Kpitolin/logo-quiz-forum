@@ -38,7 +38,7 @@ function Main()
     game.global = {
 
     score: 0,
-    bestScore: 0,
+    best_score: 0,
     currentLevel:0,
     currentLogo:0,
     displayedLogos: [],
@@ -51,7 +51,7 @@ function Main()
     game.state.add("GameTitle", gameTitle);
     game.state.add("LevelSelect", levelSelect);
     game.state.add("PlayLevelSolo", playLevelSolo);    
-    //game.state.add("ScoreScreen", scoreScreen);
+    game.state.add("ScoreScreen", scoreScreen);
 
     // Start the first screen (chargement en cours)
     game.state.start("GameTitle");

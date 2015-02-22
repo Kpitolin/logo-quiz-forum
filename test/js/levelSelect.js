@@ -112,14 +112,14 @@ create: function ()
     },
     intermediaire:function(button)
     {
-        game.global.currentLevel = 2;
+        game.global.currentLevel = 1;
         game.global.answer_delay = 10;
         game.state.start("PlayLevelSolo");
 
     },
     expert:function(button)
     {
-        game.global.currentLevel = 3;
+        game.global.currentLevel = 1;
         game.global.answer_delay = 5;
         game.state.start("PlayLevelSolo");
 

@@ -4,6 +4,8 @@
 */
 
 const const_offset_y_perc =10;
+const const_offset_x_perc =5;
+
 
 
 // game.load.text('assetList','path/to/file.json') 
@@ -38,10 +40,10 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"alanallman.png",
-		"answer1":"Allan Allaman",
+		"answer1":"Alan Allman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
-		"correct-answer":"Alan Allaman"
+		"correct-answer":"Alan Allman"
 	},
 
 	{
@@ -196,7 +198,7 @@ var debutant =
 		"img_src":"bouyguesconstruction.png",
 		"answer1":"Fiducial",
 		"answer2":"Ikos",
-		"answer3":"Bouygues Contruction",
+		"answer3":"Bouygues Construction",
 		"correct-answer":"Bouygues Construction"
 	},
 

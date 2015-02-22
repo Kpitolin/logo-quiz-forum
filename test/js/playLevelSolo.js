@@ -250,26 +250,35 @@ create: function ()
 
     }
 
-
+        /**
+        *
+        *   We execute this once
+        *
+        */
 
         /**
         *  select animation for the answer 
         */
 
-        item.animations.play('answerC');
-        /**
-        * Save selected answer
-        */
-
-        selectedAnswers.push(groupAnswers.getIndex(item));  
+        if (gameActive){
 
 
-        /**
-        * Validation part
-        */        
+
+            item.animations.play('answerC');
+            /**
+            * Save selected answer
+            */
+
+            selectedAnswers.push(groupAnswers.getIndex(item));  
 
 
-        timer2.start();
+            /**
+            * Validation part
+            */        
+
+
+            timer2.start();
+        }
 
   },
 
@@ -367,7 +376,7 @@ create: function ()
     game.global.currentProgress ++;
 
     if (game.global.currentProgress==10){
-        game.state.start("score");
+        game.state.start("ScoreScreen");
 
     }
 

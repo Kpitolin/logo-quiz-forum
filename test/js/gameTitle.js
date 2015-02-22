@@ -86,14 +86,14 @@ create: function ()
     solo_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
     solo_button.position = getCenteredPosition(game.world.width,game.world.height, solo_button.getBounds().width, solo_button.getBounds().height);
 
-    multi_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
-    multi_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + offset_y);
+    // multi_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
+    // multi_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + offset_y);
 
     ranking_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
-    ranking_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 2* offset_y);   
+    ranking_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + offset_y);   
 
-    options_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
-    options_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 3* offset_y); 
+    // options_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
+    // options_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + 3* offset_y); 
 
     /*
     We define the style of the text which we will add to the buttons
@@ -101,9 +101,9 @@ create: function ()
 
     var style_textbutton = { font: "bold 12px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: solo_button.getBounds().width, align: "center" };
 	solo_text = game.add.text(0,0, "Solo", style_textbutton);
-	multi_text = game.add.text(0,0, "Multijoueur", style_textbutton);
+	// multi_text = game.add.text(0,0, "Multijoueur", style_textbutton);
 	ranking_text = game.add.text(0,0, "Classement", style_textbutton);
-	options_text = game.add.text(0,0, "Options", style_textbutton);	
+	// options_text = game.add.text(0,0, "Options", style_textbutton);	
 
 
 
@@ -111,16 +111,16 @@ create: function ()
 	/*We add the text to the buttons (we will use the local coordinate system for now on)*/
 
     solo_button.addChild(solo_text);
-    multi_button.addChild(multi_text);
+    // multi_button.addChild(multi_text);
     ranking_button.addChild(ranking_text);
-    options_button.addChild(options_text);
+    // options_button.addChild(options_text);
 
     /*Text positionning*/
 
     solo_text.position = getCenteredPosition( solo_button.getBounds().width, solo_button.getBounds().height, solo_text.getBounds().width, solo_text.getBounds().height);
-    multi_text.position = getCenteredPosition( multi_button.getBounds().width, multi_button.getBounds().height, multi_text.getBounds().width, multi_text.getBounds().height);
+    // multi_text.position = getCenteredPosition( multi_button.getBounds().width, multi_button.getBounds().height, multi_text.getBounds().width, multi_text.getBounds().height);
     ranking_text.position = getCenteredPosition( ranking_button.getBounds().width, ranking_button.getBounds().height, ranking_text.getBounds().width, ranking_text.getBounds().height);
-    options_text.position = getCenteredPosition( options_button.getBounds().width, options_button.getBounds().height, options_text.getBounds().width, options_text.getBounds().height);
+    // options_text.position = getCenteredPosition( options_button.getBounds().width, options_button.getBounds().height, options_text.getBounds().width, options_text.getBounds().height);
 
 
 
