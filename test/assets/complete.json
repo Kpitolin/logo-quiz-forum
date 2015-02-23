@@ -21,11 +21,11 @@
 	
 	{
 		"logo-id":"",
-		"img_src":"allanallaman.PNG",
-		"answer1":"Allan Allaman",
+		"img_src":"alanallman.PNG",
+		"answer1":"Alan Allman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
-		"correct-answer":"Allan Allaman"
+		"correct-answer":"Alan Allman"
 	},
 
 	{
@@ -59,7 +59,7 @@
 		"logo-id":"",
 		"img_src":"arcelormittal.PNG",
 		"answer1":"Safran",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Arcelormittal",
 		"correct-answer":"Arcelormittal"
 	},
@@ -68,7 +68,7 @@
 		"logo-id":"",
 		"img_src":"areva.PNG",
 		"answer1":"ANRT",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Areva",
 		"correct-answer":"Areva"
 	},
@@ -95,7 +95,7 @@
 		"logo-id":"",
 		"img_src":"asymptote.PNG",
 		"answer1":"Asymptote",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Ausy",
 		"correct-answer":"Asymptote"
 	},
@@ -122,7 +122,7 @@
 		"logo-id":"",
 		"img_src":"avanade.PNG",
 		"answer1":"ANRT",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Avanade",
 		"correct-answer":"Avanade"
 	},
