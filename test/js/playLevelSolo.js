@@ -89,6 +89,7 @@ game.load.spritesheet('answerSheet', 'assets/cadre.png', 200, 50); //100,32 spri
 
 create: function () 
 {
+    game.canvas.oncontextmenu = function (e) { e.preventDefault(); }
 
     game.global.displayedLogos.push(game.global.currentLogo);
 	
