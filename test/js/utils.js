@@ -39,11 +39,11 @@ var debutant =
 	
 	{
 		"logo-id":"",
-		"img_src":"allanallaman.PNG",
-		"answer1":"Allan Allaman",
+		"img_src":"alanallman.PNG",
+		"answer1":"Alan Allman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
-		"correct-answer":"Allan Allaman"
+		"correct-answer":"Alan Allman"
 	},
 
 	{
@@ -140,7 +140,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"avanade.PNG",
 		"answer1":"ANRT",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Avanade",
 		"correct-answer":"Avanade"
 	},
