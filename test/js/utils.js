@@ -255,7 +255,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"EDF.png",
 		"answer1":"EM Lyon",
-		"answer2":"Generaldi",
+		"answer2":"Generali",
 		"answer3":"EDF",
 		"correct-answer":"EDF"
 	},
@@ -410,7 +410,7 @@ var debutant =
 	{
 		"logo-id":"",
 		"img_src":"GrenobleEM.png",
-		"answer1":"Generaldi",
+		"answer1":"Generali",
 		"answer2":"Gemalto",
 		"answer3":"Grenoble EM",
 		"correct-answer":"Grenoble EM"
