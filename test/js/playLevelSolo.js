@@ -64,7 +64,7 @@ init: function()
 
     var numLogo;
     do{
-            numLogo = game.rnd.integerInRange(0, 100);
+            numLogo = game.rnd.integerInRange(0, 128);
 
     }
     while (numLogo === undefined ||  game.global.displayedLogos.contains(numLogo));

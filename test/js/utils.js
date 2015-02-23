@@ -22,7 +22,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"abmi.png",
+		"img_src":"abmi.PNG",
 		"answer1":"Axon",
 		"answer2":"Abmi",
 		"answer3":"Ausy",
@@ -30,7 +30,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"advansgroup.png",
+		"img_src":"advansgroup.PNG",
 		"answer1":"Advans",
 		"answer2":"Ekium",
 		"answer3":"Arcelormittal",
@@ -39,16 +39,16 @@ var debutant =
 	
 	{
 		"logo-id":"",
-		"img_src":"alanallman.png",
-		"answer1":"Alan Allman",
+		"img_src":"allanallaman.PNG",
+		"answer1":"Allan Allaman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
-		"correct-answer":"Alan Allman"
+		"correct-answer":"Allan Allaman"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"alten.png",
+		"img_src":"alten.PNG",
 		"answer1":"ANSSI",
 		"answer2":"Elis",
 		"answer3":"Alten",
@@ -57,7 +57,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"anrt.png",
+		"img_src":"anrt.PNG",
 		"answer1":"SEB",
 		"answer2":"ANRT",
 		"answer3":"Hardis",
@@ -66,7 +66,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"anssi.png",
+		"img_src":"anssi.PNG",
 		"answer1":"ANSSI",
 		"answer2":"Egis",
 		"answer3":"Gemalto",
@@ -75,25 +75,25 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"arcelormittal.png",
+		"img_src":"arcelormittal.PNG",
 		"answer1":"Safran",
-		"answer2":"Alan Allaman",
+		"answer2":"Allan Allaman",
 		"answer3":"Arcelormittal",
 		"correct-answer":"Arcelormittal"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"areva.png",
+		"img_src":"areva.PNG",
 		"answer1":"ANRT",
-		"answer2":"Alan Allaman",
+		"answer2":"Allan Allaman",
 		"answer3":"Areva",
 		"correct-answer":"Areva"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"arkema.png",
+		"img_src":"arkema.PNG",
 		"answer1":"Arkema",
 		"answer2":"Reel",
 		"answer3":"Qualiconsult",
@@ -102,7 +102,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"assystem.png",
+		"img_src":"assystem.PNG",
 		"answer1":"Plastic Omnium",
 		"answer2":"Assystem",
 		"answer3":"Ekium",
@@ -111,16 +111,16 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"asymptote.png",
+		"img_src":"asymptote.PNG",
 		"answer1":"Asymptote",
-		"answer2":"Alan Allaman",
+		"answer2":"Allan Allaman",
 		"answer3":"Ausy",
 		"correct-answer":"Asymptote"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"attijariwafabank.png",
+		"img_src":"attijariwafabank.PNG",
 		"answer1":"Attijariwafa bank",
 		"answer2":"Saint Gobain",
 		"answer3":"National Instruments",
@@ -129,7 +129,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"ausy.png",
+		"img_src":"ausy.PNG",
 		"answer1":"Ausy",
 		"answer2":"Axon",
 		"answer3":"Sii",
@@ -138,24 +138,24 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"avanade.png",
+		"img_src":"avanade.PNG",
 		"answer1":"ANRT",
-		"answer2":"Alan Allaman",
+		"answer2":"Allan Allaman",
 		"answer3":"Avanade",
 		"correct-answer":"Avanade"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"axon.png",
+		"img_src":"axon.PNG",
 		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"Crédit Agricole Du Maroc",
 		"answer3":"Axon",
 		"correct-answer":"Axon"
 	},
 	{
 		"logo-id":"",
-		"img_src":"beijaflore.png",
+		"img_src":"beijaflore.PNG",
 		"answer1":"EDHEC",
 		"answer2":"Beijaflore",
 		"answer3":"Solvay",
@@ -163,15 +163,15 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"blueinfinity.png",
+		"img_src":"blueinfinty.PNG",
 		"answer1":"Blue Infinity",
 		"answer2":"Chec",
-		"answer3":"GFI Informatique",
+		"answer3":"GFInformatique",
 		"correct-answer":"Blue Infinity"
 	},
 	{
 		"logo-id":"",
-		"img_src":"bobst.png",
+		"img_src":"bobst.PNG",
 		"answer1":"Groupe Atlantic",
 		"answer2":"Bobst",
 		"answer3":"Euro Information",
@@ -179,15 +179,15 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"boccard.png",
+		"img_src":"broccard.PNG",
 		"answer1":"Capgemini",
 		"answer2":"Dimogestion",
-		"answer3":"Boccard",
-		"correct-answer":"Boccard"
+		"answer3":"Brocard",
+		"correct-answer":"Broccard"
 	},
 	{
 		"logo-id":"",
-		"img_src":"bottomline.png",
+		"img_src":"bottomline.PNG",
 		"answer1":"Bottom Line",
 		"answer2":"Bureau Alpes Controles",
 		"answer3":"Link",
@@ -195,16 +195,16 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"bouyguesconstruction.png",
+		"img_src":"bouyguescontruction.PNG",
 		"answer1":"Fiducial",
 		"answer2":"Ikos",
-		"answer3":"Bouygues Construction",
+		"answer3":"Bouygues Contruction",
 		"correct-answer":"Bouygues Construction"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"bureaualpescontroles.png",
+		"img_src":"bureaualpescontroles.PNG",
 		"answer1":"Bureau Alpes Controles",
 		"answer2":"ABMI",
 		"answer3":"Advans",
@@ -213,7 +213,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"bureauveritas.png",
+		"img_src":"bureauveritas.PNG",
 		"answer1":"Emerson",
 		"answer2":"Royal Air Maroc",
 		"answer3":"Bureau Veritas",
@@ -221,7 +221,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"capgemini.png",
+		"img_src":"capgemini.PNG",
 		"answer1":"EDF",
 		"answer2":"Murex",
 		"answer3":"Capgemini",
@@ -229,7 +229,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"chec.png",
+		"img_src":"chec.PNG",
 		"answer1":"Renault Truck",
 		"answer2":"Chec",
 		"answer3":"Elis",
@@ -237,15 +237,15 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"CreditAgricolDuMaroc.png",
+		"img_src":"CreditAgricolDuMaroc.PNG",
 		"answer1":"Vulcain Ingénierie",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"Crédit Agricole Du Maroc",
 		"answer3":"Setec",
-		"correct-answer":"Crédit Agricol Du Maroc"
+		"correct-answer":"Crédit Agricole Du Maroc"
 	},
 	{
 		"logo-id":"",
-		"img_src":"dimogestion.png",
+		"img_src":"dimogestion.PNG",
 		"answer1":"Solutec",
 		"answer2":"Dimo Gestion",
 		"answer3":"ANSSI",
@@ -253,7 +253,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"EDF.png",
+		"img_src":"EDF.PNG",
 		"answer1":"EM Lyon",
 		"answer2":"Generali",
 		"answer3":"EDF",
@@ -261,7 +261,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"EDHEC.png",
+		"img_src":"EDHEC.PNG",
 		"answer1":"Dimo Gestion",
 		"answer2":"EDHEC",
 		"answer3":"Socotec",
@@ -269,7 +269,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"egis.png",
+		"img_src":"egis.PNG",
 		"answer1":"Egis",
 		"answer2":"Ekium",
 		"answer3":"Emerson",
@@ -277,7 +277,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"eicesi.png",
+		"img_src":"eicesi.PNG",
 		"answer1":"ESSEC",
 		"answer2":"EICESI",
 		"answer3":"NGE",
@@ -285,7 +285,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"eiffage.png",
+		"img_src":"eiffage.PNG",
 		"answer1":"Eiffage",
 		"answer2":"Schneider Electric",
 		"answer3":"Setec",
@@ -293,15 +293,15 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"ekium.png",
+		"img_src":"ekium.PNG",
 		"answer1":"Groupe Atlantic",
-		"answer2":"Crédit Agricol Du Maroc",
+		"answer2":"Crédit Agricole Du Maroc",
 		"answer3":"Ekium",
 		"correct-answer":"Ekium"
 	},
 	{
 		"logo-id":"",
-		"img_src":"elsi.png",
+		"img_src":"elsi.PNG",
 		"answer1":"Segula Technologies",
 		"answer2":"Michelin",
 		"answer3":"Elis",
@@ -309,7 +309,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"em lyon.png",
+		"img_src":"em lyon.PNG",
 		"answer1":"EM Lyon",
 		"answer2":"Hardis",
 		"answer3":"Sii",
@@ -318,7 +318,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"emerson.png",
+		"img_src":"emerson.PNG",
 		"answer1":"Novo Nordisk",
 		"answer2":"Emerson",
 		"answer3":"ESCP Europe",
@@ -327,7 +327,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"ENSAM.png",
+		"img_src":"ENSAM.PNG",
 		"answer1":"Assystem",
 		"answer2":"Sonovision Group",
 		"answer3":"ENSAM",
@@ -336,16 +336,16 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"escpeurope.png",
-		"answer1":"ESCP Europe",
+		"img_src":"espceurope.PNG",
+		"answer1":"ESPC Europe",
 		"answer2":"Telindus",
 		"answer3":"Swissquote",
-		"correct-answer":"ESCP Europe"
+		"correct-answer":"ESPC Europe"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"essec.png",
+		"img_src":"essec.PNG",
 		"answer1":"Technord",
 		"answer2":"ESSEC",
 		"answer3":"Groupe 3F",
@@ -354,7 +354,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"EuroInformation.png",
+		"img_src":"EuroInformatique.PNG",
 		"answer1":"IE Business School",
 		"answer2":"Ensam",
 		"answer3":"Euro Information",
@@ -363,7 +363,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Fiducial.png",
+		"img_src":"Fiducial.PNG",
 		"answer1":"Ausy",
 		"answer2":"Solutec",
 		"answer3":"Fiducial",
@@ -373,7 +373,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Gemalto.png",
+		"img_src":"Gemalto.PNG",
 		"answer1":"Gemalto",
 		"answer2":"Orange",
 		"answer3":"Grenoble EM",
@@ -382,7 +382,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GeneralElectric.png",
+		"img_src":"GeneralElectric.PNG",
 		"answer1":"EDF",
 		"answer2":"General Electric",
 		"answer3":"Sopra Steria",
@@ -391,25 +391,25 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Gerali.png",
+		"img_src":"Generali.PNG",
 		"answer1":"Setec",
 		"answer2":"Total",
-		"answer3":"Gerali",
-		"correct-answer":"Gerali"
+		"answer3":"Generali",
+		"correct-answer":"Generali"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"gfi.png",
-		"answer1":"GFI Informatique",
+		"img_src":"GFInformatique.PNG",
+		"answer1":"GF Informatique",
 		"answer2":"SPC Consultants",
 		"answer3":"Tata Consultancy Services",
-		"correct-answer":"GFI Informatique"
+		"correct-answer":"GF Informatique"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"GrenobleEM.png",
+		"img_src":"GrenobleEM.PNG",
 		"answer1":"Generali",
 		"answer2":"Gemalto",
 		"answer3":"Grenoble EM",
@@ -418,7 +418,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Groupe3F.png",
+		"img_src":"Groupe3F.PNG",
 		"answer1":"Ikos",
 		"answer2":"Groupe 3F",
 		"answer3":"It Link",
@@ -427,8 +427,8 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GroupeAtlantic.png",
-		"answer1":"Boccard",
+		"img_src":"GroupeAtlantic.PNG",
+		"answer1":"Broccard",
 		"answer2":"Atlantic",
 		"answer3":"Blue Infinity",
 		"correct-answer":"Atlantic"
@@ -436,7 +436,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GroupeNGE.png",
+		"img_src":"GroupeNGE.PNG",
 		"answer1":"NGE",
 		"answer2":"National Instrument",
 		"answer3":"Vinci",
@@ -445,16 +445,16 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GroupeRoyalAirMaroc.png",
+		"img_src":"GroupeRoyalAirMaroc.PNG",
 		"answer1":"Asymptote",
 		"answer2":"Royal Air Maroc",
 		"answer3":"Attijariwafa Bank",
-		"correct-answer":"Royal Air Maroc"
+		"correct-answer":"Aussy"
 	},
 
 	{
 		"logo-id":"",
-		"img_src":"GroupeSeb.png",
+		"img_src":"GroupeSeb.PNG",
 		"answer1":"Seb",
 		"answer2":"Solucom",
 		"answer3":"Sopra Steria",
@@ -463,7 +463,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"RenaultTrucks.png",
+		"img_src":"RenaultTrucks.PNG",
 		"answer1":"Safran",
 		"answer2":"Renault Trucks",
 		"answer3":"Veolia",
@@ -472,7 +472,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Hardis.png",
+		"img_src":"Hardis.PNG",
 		"answer1":"Telindus",
 		"answer2":"Ubifrance",
 		"answer3":"Hardis",
@@ -481,7 +481,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"IEBusinessSchool.png",
+		"img_src":"IEBusinessSchool.PNG",
 		"answer1":"IE Business School",
 		"answer2":"Mi-GSO",
 		"answer3":"ITLink",
@@ -490,7 +490,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"IkosRA.png",
+		"img_src":"IkosRA.PNG",
 		"answer1":"IE Business School",
 		"answer2":"It Link",
 		"answer3":"Ikos RA",
@@ -499,7 +499,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"ITLink.png",
+		"img_src":"ITLink.PNG",
 		"answer1":"Chec",
 		"answer2":"Viveris",
 		"answer3":"IT Link",
@@ -508,7 +508,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Michelin.png",
+		"img_src":"Michelin.PNG",
 		"answer1":"Michelin",
 		"answer2":"Egis",
 		"answer3":"Beijaflore",
@@ -517,7 +517,7 @@ var debutant =
       
 	{
 		"logo-id":"",
-		"img_src":"Mi-Gso.png",
+		"img_src":"Mi-Gso.PNG",
 		"answer1":"Michelin",
 		"answer2":"Alten",
 		"answer3":"Mi-GSO",
@@ -526,7 +526,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Murex.png",
+		"img_src":"Murex.PNG",
 		"answer1":"Murex",
 		"answer2":"Bouygues Construction",
 		"answer3":"Ubifrance",
@@ -535,7 +535,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"NationalInstruments.png",
+		"img_src":"NationalInstruments.PNG",
 		"answer1":"Novo Nordisk",
 		"answer2":"National Instruments",
 		"answer3":"EM Lyon",
@@ -544,7 +544,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"NovoNordisk.png",
+		"img_src":"NovoNordisk.PNG",
 		"answer1":"Reel",
 		"answer2":"Fiducial",
 		"answer3":"Novo Nordisk",
@@ -553,7 +553,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"PlasticOmnium.png",
+		"img_src":"PlasticOmnium.PNG",
 		"answer1":"Plastic Omnium",
 		"answer2":"Qualiconsult",
 		"answer3":"Bobst",
@@ -562,7 +562,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Qualiconsult.png",
+		"img_src":"Qualiconsult.PNG",
 		"answer1":"General Electric",
 		"answer2":"Qualiconsult",
 		"answer3":"Socotec",
@@ -571,7 +571,7 @@ var debutant =
 	
 	{
 		"logo-id":"",
-		"img_src":"Reel.png",
+		"img_src":"Reel.PNG",
 		"answer1":"Viveris",
 		"answer2":"Renault Trucks",
 		"answer3":"Reel",
@@ -580,7 +580,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Safran.png",
+		"img_src":"Safran.PNG",
 		"answer1":"Safran",
 		"answer2":"Solvay",
 		"answer3":"Segula Technologies",
@@ -589,7 +589,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"SaintGobain.png",
+		"img_src":"SaintGobain.PNG",
 		"answer1":"EICESI",
 		"answer2":"Eiffage",
 		"answer3":"Saint Gobain",
@@ -598,7 +598,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"SchneiderElectric.png",
+		"img_src":"SchneiderElectric.PNG",
 		"answer1":"Setec",
 		"answer2":"Schneider Electric",
 		"answer3":"Solucom",
@@ -607,7 +607,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"SegulaTechnologies.png",
+		"img_src":"SegulaTechnologies.PNG",
 		"answer1":"Segula Technologies",
 		"answer2":"Hardis",
 		"answer3":"Bureau Alpes Controles",
@@ -616,7 +616,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Setec.png",
+		"img_src":"Setec.PNG",
 		"answer1":"Solutec",
 		"answer2":"Setec",
 		"answer3":"Schneider Electric",
@@ -625,7 +625,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Sii.png",
+		"img_src":"Sii.PNG",
 		"answer1":"Sii",
 		"answer2":"Sopra Steria",
 		"answer3":"Swissquote",
@@ -634,7 +634,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Socotec.png",
+		"img_src":"Socotec.PNG",
 		"answer1":"Solutec",
 		"answer2":"Socotec",
 		"answer3":"Solvay",
@@ -643,7 +643,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Solucom.png",
+		"img_src":"Solucom.PNG",
 		"answer1":"Solucom",
 		"answer2":"Solutec",
 		"answer3":"Seb",
@@ -652,7 +652,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Solutec.png",
+		"img_src":"Solutec.PNG",
 		"answer1":"SPC Consultants",
 		"answer2":"ESPC Europe",
 		"answer3":"Solutec",
@@ -661,7 +661,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Solvay.png",
+		"img_src":"Solvay.PNG",
 		"answer1":"Setec",
 		"answer2":"Saint Gobain",
 		"answer3":"Solvay",
@@ -670,7 +670,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"SonovisionGroup.png",
+		"img_src":"SonovisionGroup.PNG",
 		"answer1":"Sonovision Group",
 		"answer2":"Technord",
 		"answer3":"Total",
@@ -679,7 +679,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"SopraSteria.png",
+		"img_src":"SopraSteria.PNG",
 		"answer1":"Bottom line",
 		"answer2":"Sopra Steria",
 		"answer3":"Bureau Verit",
@@ -688,7 +688,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"SPCConsultants.png",
+		"img_src":"SPCConsultants.PNG",
 		"answer1":"SPC Consultants",
 		"answer2":"Axon",
 		"answer3":"EDF",
@@ -697,7 +697,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Swissquote.png",
+		"img_src":"Swissquote.PNG",
 		"answer1":"Swissquote",
 		"answer2":"Dimogestion",
 		"answer3":"Mi-GSO",
@@ -706,7 +706,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"TataConsultancyServices.png",
+		"img_src":"TataConsultancyServices.PNG",
 		"answer1":"ESSEC",
 		"answer2":"Murex",
 		"answer3":"Tata Consultancy",
@@ -715,7 +715,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Technord.png",
+		"img_src":"Technord.PNG",
 		"answer1":"Bobst",
 		"answer2":"Technord",
 		"answer3":"NGE",
@@ -723,7 +723,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"Telindus.png",
+		"img_src":"Telindus.PNG",
 		"answer1":"Avanade",
 		"answer2":"Telindus",
 		"answer3":"Elis",
@@ -731,7 +731,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"Total.png",
+		"img_src":"Total.PNG",
 		"answer1":"Total",
 		"answer2":"Solucom",
 		"answer3":"Telindus",
@@ -740,7 +740,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Ubifrance.png",
+		"img_src":"Ubifrance.PNG",
 		"answer1":"EDHEC",
 		"answer2":"Egis",
 		"answer3":"Ubifrance",
@@ -749,7 +749,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Veolia.png",
+		"img_src":"Veolia.PNG",
 		"answer1":"Veolia",
 		"answer2":"Gemalto",
 		"answer3":"Arcelormittal",
@@ -758,7 +758,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Vinci.png",
+		"img_src":"Vinci.PNG",
 		"answer1":"Eiffage",
 		"answer2":"Vinci",
 		"answer3":"Bouygues Construction",
@@ -767,7 +767,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"Viveris.png",
+		"img_src":"Viveris.PNG",
 		"answer1":"Viveris",
 		"answer2":"Telindus",
 		"answer3":"Technord",
@@ -775,7 +775,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"VulcainIngénierie.png",
+		"img_src":"VulcainIngénierie.PNG",
 		"answer1":"Veolia",
 		"answer2":"Vinci",
 		"answer3":"Vulcain Ingénierie",
@@ -783,7 +783,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"accenture.png",
+		"img_src":"accenture.PNG",
 		"answer1":"Accenture",
 		"answer2":"Solucom",
 		"answer3":"Cap Gemini",
@@ -791,7 +791,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"amaris.png",
+		"img_src":"amaris.PNG",
 		"answer1":"Bobst",
 		"answer2":"Amaris",
 		"answer3":"Vinci",
@@ -799,7 +799,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"apave.png",
+		"img_src":"apave.PNG",
 		"answer1":"Apave",
 		"answer2":"Colas",
 		"answer3":"Telindus",
@@ -807,7 +807,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"atos.png",
+		"img_src":"atos.PNG",
 		"answer1":"Axa Assurance Maroc",
 		"answer2":"Atos",
 		"answer3":"Casino",
@@ -815,7 +815,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"axaassurancemaroc.png",
+		"img_src":"axaassurancemaroc.PNG",
 		"answer1":"Axa Assurance Maroc",
 		"answer2":"Viveris",
 		"answer3":"Apave",
@@ -823,7 +823,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"casino.png",
+		"img_src":"casino.PNG",
 		"answer1":"Atos",
 		"answer2":"Casino",
 		"answer3":"Colas",
@@ -831,7 +831,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"clubfrancemaroc.png",
+		"img_src":"clubfrancemaroc.PNG",
 		"answer1":"GCC",
 		"answer2":"EY",
 		"answer3":"Club France Maroc",
@@ -839,7 +839,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"dcns.png",
+		"img_src":"dcns.PNG",
 		"answer1":"DCNS",
 		"answer2":"Decathlon",
 		"answer3":"Viveris",
@@ -847,7 +847,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"decathlon.png",
+		"img_src":"decathlon.PNG",
 		"answer1":"EY",
 		"answer2":"Decathlon",
 		"answer3":"Mars",
@@ -855,7 +855,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"ey.png",
+		"img_src":"ey.PNG",
 		"answer1":"EY",
 		"answer2":"IAE Lyon",
 		"answer3":"GDF SUEZ",
@@ -863,7 +863,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"fmc.png",
+		"img_src":"fmc.PNG",
 		"answer1":"FMC",
 		"answer2":"Neo Soft",
 		"answer3":"Club France Maroc",
@@ -871,7 +871,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"gdfsuez.png",
+		"img_src":"gdfsuez.PNG",
 		"answer1":"GSE GROUP",
 		"answer2":"GDF Suez",
 		"answer3":"IAE Lyon",
@@ -879,7 +879,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"gsegroup.png",
+		"img_src":"gsegroup.PNG",
 		"answer1":"GSE GROUP",
 		"answer2":"Schlumberger",
 		"answer3":"CGI",
@@ -887,7 +887,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"hec.png",
+		"img_src":"hec.PNG",
 		"answer1":"Decathlon",
 		"answer2":"Schlumberger",
 		"answer3":"HEC",
@@ -895,7 +895,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"iae.png",
+		"img_src":"iae.PNG",
 		"answer1":"IAE Lyon",
 		"answer2":"SMAC",
 		"answer3":"INSA",
@@ -903,7 +903,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"infologic.png",
+		"img_src":"infologic.PNG",
 		"answer1":"GSE Group",
 		"answer2":"Intitek",
 		"answer3":"Infologic",
@@ -911,7 +911,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"icrc.png",
+		"img_src":"icrc.PNG",
 		"answer1":"ICRC",
 		"answer2":"Lombard Odier",
 		"answer3":"Leon Grossier",
@@ -919,7 +919,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"ifp.png",
+		"img_src":"ifp.PNG",
 		"answer1":"IFP",
 		"answer2":"HEC",
 		"answer3":"INSA",
@@ -927,7 +927,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"insa.png",
+		"img_src":"insa.PNG",
 		"answer1":"INSA",
 		"answer2":"Infologic",
 		"answer3":"MBDA",
@@ -935,7 +935,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"intitek.png",
+		"img_src":"intitek.PNG",
 		"answer1":"Amaris",
 		"answer2":"Intitek",
 		"answer3":"ICRC",
@@ -943,7 +943,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"loreal.png",
+		"img_src":"loreal.PNG",
 		"answer1":"Orange",
 		"answer2":"L'Oreal",
 		"answer3":"Leon Grosse",
@@ -951,7 +951,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"mars.png",
+		"img_src":"mars.PNG",
 		"answer1":"Lombard Odier",
 		"answer2":"Mars",
 		"answer3":"MBDA",
@@ -959,7 +959,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"mbda.png",
+		"img_src":"mbda.PNG",
 		"answer1":"GDF Suez",
 		"answer2":"DCNS",
 		"answer3":"MBDA",
@@ -967,7 +967,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"neosoft.png",
+		"img_src":"neosoft.PNG",
 		"answer1":"NTN SNR",
 		"answer2":"Neo Soft",
 		"answer3":"Sword",
@@ -975,7 +975,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"ntnsnr.png",
+		"img_src":"ntnsnr.PNG",
 		"answer1":"Suez Environnement",
 		"answer2":"NTN SNR",
 		"answer3":"Orange",
@@ -983,7 +983,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"orange.png",
+		"img_src":"orange.PNG",
 		"answer1":"RTE",
 		"answer2":"Orange",
 		"answer3":"GSE Group",
@@ -991,7 +991,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"prysmian.png",
+		"img_src":"prysmian.PNG",
 		"answer1":"IFP",
 		"answer2":"Prysmian",
 		"answer3":"GPE GROUP",
@@ -999,7 +999,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"rte.png",
+		"img_src":"rte.PNG",
 		"answer1":"RTE",
 		"answer2":"Thales",
 		"answer3":"NTN SNR",
@@ -1007,7 +1007,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"schlumberger.png",
+		"img_src":"schlumberger.PNG",
 		"answer1":"Smac",
 		"answer2":"Schlumberger",
 		"answer3":"Sword",
@@ -1015,7 +1015,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"smac.png",
+		"img_src":"smac.PNG",
 		"answer1":"Smac",
 		"answer2":"SNCF",
 		"answer3":"Sword",
@@ -1023,7 +1023,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"sncf.png",
+		"img_src":"sncf.PNG",
 		"answer1":"Suez Environnement",
 		"answer2":"SNCF",
 		"answer3":"COLAS",
@@ -1031,7 +1031,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"suezenvironnement.png",
+		"img_src":"suezenvironnement.PNG",
 		"answer1":"Suez Environnement",
 		"answer2":"Sword",
 		"answer3":"Thales",
@@ -1039,7 +1039,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"sword.png",
+		"img_src":"sword.PNG",
 		"answer1":"SNCF",
 		"answer2":"Sword",
 		"answer3":"CEA",
@@ -1047,7 +1047,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"thales.png",
+		"img_src":"thales.PNG",
 		"answer1":"Valeo",
 		"answer2":"Thales",
 		"answer3":"AKKA",
@@ -1055,7 +1055,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"valeo.png",
+		"img_src":"valeo.PNG",
 		"answer1":"Valeo",
 		"answer2":"Murex",
 		"answer3":"Orange",
@@ -1063,7 +1063,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"colas.png",
+		"img_src":"colas.PNG",
 		"answer1":"Amadeus",
 		"answer2":"Colas",
 		"answer3":"Solucom",
@@ -1071,7 +1071,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"gcc.png",
+		"img_src":"gcc.PNG",
 		"answer1":"CEA",
 		"answer2":"GCC",
 		"answer3":"Solutec",
@@ -1079,7 +1079,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"cea.png",
+		"img_src":"cea.PNG",
 		"answer1":"CEA",
 		"answer2":"Orange",
 		"answer3":"Amadeus",
@@ -1087,7 +1087,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"akka.png",
+		"img_src":"akka.PNG",
 		"answer1":"Amaris",
 		"answer2":"Akka",
 		"answer3":"Amadeus",
@@ -1095,7 +1095,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"Amadeus.png",
+		"img_src":"Amadeus.PNG",
 		"answer1":"Amaris",
 		"answer2":"Orange",
 		"answer3":"Amadeus",
@@ -1103,7 +1103,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"cgi.png",
+		"img_src":"cgi.PNG",
 		"answer1":"CGI",
 		"answer2":"CEA",
 		"answer3":"GCC",
@@ -1111,7 +1111,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"altran.png",
+		"img_src":"altran.PNG",
 		"answer1":"CGI",
 		"answer2":"Altran",
 		"answer3":"Akka",
