@@ -99,7 +99,7 @@ create: function ()
 
      logo_image = game.add.image(0,0,'logo');
      logo_image.position = getCenteredPosition(game.world.width,game.world.height, logo_image.getBounds().width, logo_image.getBounds().height);
-     logo_image.position.y -= 4*offset_y;
+     logo_image.position.y -= 3*offset_y;
      var style = { font: "20px Arial", fill: "#182d3b"};
 	   header_text = game.add.text(0,0, "A quelle entreprise correspond ce logo ?", style);
 	   header_text.position.y = logo_image.position.y + 2*offset_y;
@@ -173,9 +173,17 @@ create: function ()
 
 
 
-    // Timer text creation
-    txtTime = game.add.text(20,20 , "Temps écoulé : 0", { font: "15px Arial", fill: "black" });
-    txtScore = game.add.text(20,40 , "Score : " + game.global.score, { font: "15px Arial", fill: "black" });
+    // Timer and score text creation and positionning
+
+    txtTime = game.add.text(0,0 , "Temps écoulé : 0", { font: "15px Arial", fill: "black" });
+    txtScore = game.add.text(0,0 , "Score : " + game.global.score, { font: "15px Arial", fill: "black" });
+
+
+    //txtTime.position = getCenteredPosition(game.world.width, game.world.height, txtTime.getBounds().width, txtTime.getBounds().height);
+    //txtScore.position = getCenteredPosition(game.world.width, game.world.height, txtScore.getBounds().width, txtScore.getBounds().height);
+
+    txtTime.position.y = logo_image.position.y-offset_y;
+    txtScore.position.y =  txtTime.position.y + 0.5 * offset_y;
     gameActive = true;
 
     //  Set a TimerEvent
