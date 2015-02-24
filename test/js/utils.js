@@ -1,4 +1,4 @@
-﻿
+
 /**
 * Constants
 */
@@ -6,6 +6,7 @@
 const const_offset_y_perc =10;
 const const_offset_x_perc =5;
 
+var isActive;
 
 
 // game.load.text('assetList','path/to/file.json') 
@@ -1183,6 +1184,11 @@ Array.prototype.contains = function(obj) {
     }
     return false;
 }
+
+
+window.onblur = function () { 
+  isActive = false; 
+}; 
 
 
 

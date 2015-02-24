@@ -17,7 +17,6 @@ var selectedAnswerText;
 var logo_image ;
 var gameActive = false;
 
-
 //Timer Variables
 var timer;
 var timer2;
@@ -89,9 +88,9 @@ game.load.spritesheet('answerSheet', 'assets/cadre.png', 200, 50); //100,32 spri
 
 create: function () 
 {
-    game.canvas.oncontextmenu = function (e) { e.preventDefault(); }
+    game.canvas.oncontextmenu = function (e) { e.preventDefault(); } // Disable right click (cheating not allowed)
 
-    game.global.displayedLogos.push(game.global.currentLogo);
+    game.global.displayedLogos.push(game.global.currentLogo); // add the logo to the data structure
 	
 	/*
     Header Creation and placement
@@ -192,14 +191,14 @@ create: function ()
 
 
 
-    // Second timer (deay for correction after selection)
+    // Second timer (delay for correction after selection)
     timer2 = game.time.create(false);
 
-    timer2.add(Phaser.Timer.SECOND , this.validation , this);
+    timer2.add(Phaser.Timer.SECOND*0.5 , this.validation , this);
 
 
 
-    // Third timer (deay for pass to next element)
+    // Third timer (delay for pass to next element)
     timer3 = game.time.create(false);
 
     timer3.add(Phaser.Timer.SECOND*2 , this.next , this);
@@ -217,6 +216,12 @@ create: function ()
     timer4.add(Phaser.Timer.SECOND*game.global.answer_delay , this.validation , this);
 
     timer4.start();
+
+    // // Timer active session
+
+    // timer5 = game.time.create(false);
+
+    // timer5.loop(Phaser.Timer.SECOND , this.showMenu , this);
 
 
 
@@ -322,14 +327,18 @@ create: function ()
 
   correct:function(index){
 
+
+
    if (getGameContent(game.global.currentLevel)[game.global.currentLogo][this.answerIdGen(index)]
     == getGameContent(game.global.currentLevel)[game.global.currentLogo]["correct-answer"])
     {
       game.global.score++;
+
      return true;
     }
     if(game.global.score>0)
       game.global.score--;
+
    return false; 
   },
 
@@ -396,10 +405,15 @@ create: function ()
   validation:function (){
 
 
-          gameActive = false;
+          // We pause the timer for next element
 
-         if (selectedAnswers.length == 1 && this.correct(selectedAnswers))
+
+
+    if(gameActive){
+         if (selectedAnswers.length == 1)
           {
+
+            if (this.correct(selectedAnswers))
             groupAnswers.getAt(selectedAnswers).animations.play('correct');
 
           }
@@ -416,10 +430,11 @@ create: function ()
 
           }
 
+    }
 
-      // We pause the timer for next element
 
-      this.stop(); 
+
+          gameActive = false;
 
       // We fire the timer for next element
       timer3.start();
@@ -427,11 +442,12 @@ create: function ()
 
   }
 
+  // showMenu:function(){
+  //   if (isActive){
+  //     game.state.start("GameTitle"); // lance le menu si la page n'est plus active
 
-
-
-
-
+  //   }
+  // }
 
 
 
