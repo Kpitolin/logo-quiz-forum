@@ -409,9 +409,9 @@ create: function ()
 
 
 
-    if(gameActive){
-         if (selectedAnswers.length == 1)
+         if (selectedAnswers.length == 1 && gameActive)
           {
+
 
             if (this.correct(selectedAnswers))
             groupAnswers.getAt(selectedAnswers).animations.play('correct');
@@ -430,7 +430,7 @@ create: function ()
 
           }
 
-    }
+    
 
 
 
