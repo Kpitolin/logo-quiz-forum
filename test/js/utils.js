@@ -167,7 +167,7 @@ var debutant =
 		"img_src":"blueinfinty.PNG",
 		"answer1":"Blue Infinity",
 		"answer2":"Chec",
-		"answer3":"GFInformatique",
+		"answer3":"GFI Informatique",
 		"correct-answer":"Blue Infinity"
 	},
 	{
@@ -401,11 +401,11 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"GFInformatique.PNG",
-		"answer1":"GF Informatique",
+		"img_src":"GFIInformatique.PNG",
+		"answer1":"GFI Informatique",
 		"answer2":"SPC Consultants",
 		"answer3":"Tata Consultancy Services",
-		"correct-answer":"GF Informatique"
+		"correct-answer":"GFI Informatique"
 	},
 
 	{
@@ -896,7 +896,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"iae.PNG",
+		"img_src":"iae_lyon.PNG",
 		"answer1":"IAE Lyon",
 		"answer2":"SMAC",
 		"answer3":"INSA",
@@ -915,7 +915,7 @@ var debutant =
 		"img_src":"icrc.PNG",
 		"answer1":"ICRC",
 		"answer2":"Lombard Odier",
-		"answer3":"Leon Grossier",
+		"answer3":"Leon Grosse",
 		"correct-answer":"ICRC"
 	},
 	{
@@ -1117,6 +1117,47 @@ var debutant =
 		"answer2":"Altran",
 		"answer3":"Akka",
 		"correct-answer":"Altran"
+	},	
+	{
+		"logo-id":"",
+		"img_src":"leongrosse.PNG",
+		"answer1":"Orange",
+		"answer2":"L'Oreal",
+		"answer3":"Leon Grosse",
+		"correct-answer":"Leon Grosse"
+	},
+	{
+		"logo-id":"",
+		"img_src":"volvo.PNG",
+		"answer1":"Vinci",
+		"answer2":"Valeo",
+		"answer3":"Volvo",
+		"correct-answer":"Volvo"
+	},
+	{
+		"logo-id":"",
+		"img_src":"iae_aix.PNG",
+		"answer1":"IFP School",
+		"answer2":"IAE Lyon",
+		"answer3":"IAE AIX",
+		"correct-answer":"IAE AIX"
+	},
+
+		{
+		"logo-id":"",
+		"img_src":"lilly.PNG",
+		"answer1":"Lilly",
+		"answer2":"Lexsi",
+		"answer3":"IFP",
+		"correct-answer":"IAE AIX"
+	},
+	{
+		"logo-id":"",
+		"img_src":"lexsi.PNG",
+		"answer1":"Lilly",
+		"answer2":"Lexsi",
+		"answer3":"HEC",
+		"correct-answer":"Lexsi"
 	}
 
 	];
