@@ -107,6 +107,7 @@ create: function ()
     {
         game.global.currentLevel = 1;
         game.global.answer_delay = 10;
+        alert('Tu as '+ game.global.answer_delay+ ' secondes pour trouver chaque logo.');
         game.state.start("PlayLevelSolo");
 
     },
@@ -114,6 +115,8 @@ create: function ()
     {
         game.global.currentLevel = 1;
         game.global.answer_delay = 5;
+        alert('Tu as '+ game.global.answer_delay+ ' secondes pour trouver chaque logo.');
+
         game.state.start("PlayLevelSolo");
 
     },
@@ -121,6 +124,8 @@ create: function ()
     {
         game.global.currentLevel = 1;
         game.global.answer_delay = 3;
+        alert('Tu as '+ game.global.answer_delay+ ' secondes pour trouver chaque logo.');
+
         game.state.start("PlayLevelSolo");
 
     }
