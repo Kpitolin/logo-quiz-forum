@@ -78,7 +78,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"arcelormittal.PNG",
 		"answer1":"Safran",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Arcelormittal",
 		"correct-answer":"Arcelormittal"
 	},
@@ -87,7 +87,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"areva.PNG",
 		"answer1":"ANRT",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Areva",
 		"correct-answer":"Areva"
 	},
@@ -355,7 +355,7 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"EuroInformatique.PNG",
+		"img_src":"EuroInformation.png",
 		"answer1":"IE Business School",
 		"answer2":"Ensam",
 		"answer3":"Euro Information",
@@ -1149,7 +1149,7 @@ var debutant =
 		"answer1":"Lilly",
 		"answer2":"Lexsi",
 		"answer3":"IFP",
-		"correct-answer":"IAE AIX"
+		"correct-answer":"Lilly"
 	},
 	{
 		"logo-id":"",
@@ -1227,9 +1227,12 @@ Array.prototype.contains = function(obj) {
 }
 
 
-window.onblur = function () { 
-  isActive = false; 
-}; 
+// setInterval(function () {
+//   alert(window.isActive ? 'active' : 'La page se recharge après une inactivité longue.');
+//   $('#hello').append(isActive + '<br/>');
+// }, 6000);
+
+
 
 
 
