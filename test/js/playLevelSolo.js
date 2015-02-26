@@ -194,7 +194,7 @@ create: function ()
     // Second timer (delay for correction after selection)
     timer2 = game.time.create(false);
 
-    timer2.add(Phaser.Timer.SECOND*0.5 , this.validation , this);
+    timer2.add(Phaser.Timer.SECOND*0.1 , this.validation , this);
 
 
 
@@ -409,26 +409,32 @@ create: function ()
 
 
 
-         if (selectedAnswers.length == 1 && gameActive)
-          {
+           if (selectedAnswers.length == 1 && gameActive && this.correct(selectedAnswers))
+            {
+
+                groupAnswers.getAt(selectedAnswers).animations.play('correct');
 
 
-            if (this.correct(selectedAnswers))
-            groupAnswers.getAt(selectedAnswers).animations.play('correct');
 
-          }
-          else if (selectedAnswers.length !=0 )
-          {
-            groupAnswers.getAt(selectedAnswers).animations.play('false');
-            groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+            }
+            else if (selectedAnswers.length !=0 && !this.correct(selectedAnswers))
+            {
+      
+
+                groupAnswers.getAt(selectedAnswers).animations.play('false');
+                groupAnswers.getAt(this.findCorrect()).animations.play('correct');
 
 
-          }
-          else
-          {
-            groupAnswers.getAt(this.findCorrect()).animations.play('correct');
 
-          }
+            }
+            else
+            {
+              this.correct();
+              groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+            }
+        
+
 
     
 
