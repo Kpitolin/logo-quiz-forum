@@ -429,7 +429,7 @@ create: function ()
             }
             else
             {
-              this.correct();
+              this.correct(); 
               groupAnswers.getAt(this.findCorrect()).animations.play('correct');
 
             }
