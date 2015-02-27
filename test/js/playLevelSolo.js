@@ -146,7 +146,7 @@ create: function ()
     // Enable input
     itemAnswer.inputEnabled = true;
     itemAnswer.input.start(0, true);
-    itemAnswer.events.onInputDown.add(this.select);
+    itemAnswer.events.onInputUp.add(this.select);
 
     //Add Animations 'nom', 'couleurclignote','secondepourclignotement'
     itemAnswer.animations.add('correct', [3, 0], 4, true); 
@@ -407,7 +407,9 @@ create: function ()
 
           // We pause the timer for next element
 
+          // Double click error
 
+          // Bad response error
 
            if (selectedAnswers.length == 1 && gameActive && this.correct(selectedAnswers))
             {

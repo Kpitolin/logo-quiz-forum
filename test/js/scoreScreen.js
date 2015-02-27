@@ -104,6 +104,10 @@ scoreScreen  = {
         back_text.position = getCenteredPosition( back_button.getBounds().width, back_button.getBounds().height, back_text.getBounds().width, back_text.getBounds().height);
         try_again_text.position = getCenteredPosition( try_again_button.getBounds().width, try_again_button.getBounds().height, try_again_text.getBounds().width, try_again_text.getBounds().height);
 
+
+
+
+
     },
 
         try_again_action:function(button)
@@ -154,6 +158,10 @@ scoreScreen  = {
 
         }
 
+
+        // Send info to server
+
+        get_ranking(game.global.mail, game.global.score); // synchronize best score with server
 
         // Reset the score and progress
         game.global.score = 0;

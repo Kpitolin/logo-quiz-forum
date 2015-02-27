@@ -36,7 +36,7 @@ function Main()
     */
 
     game.global = {
-
+    mail: 'kevino@gmail.com',
     score: 0,
     best_score: 0,
     currentLevel:0,

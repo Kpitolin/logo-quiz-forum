@@ -164,7 +164,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"blueinfinty.PNG",
+		"img_src":"blueinfinity.PNG",
 		"answer1":"Blue Infinity",
 		"answer2":"Chec",
 		"answer3":"GFI Informatique",
@@ -180,11 +180,11 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"broccard.PNG",
+		"img_src":"boccard.PNG",
 		"answer1":"Capgemini",
 		"answer2":"Dimogestion",
-		"answer3":"Brocard",
-		"correct-answer":"Broccard"
+		"answer3":"Boccard",
+		"correct-answer":"Boccard"
 	},
 	{
 		"logo-id":"",
@@ -196,10 +196,10 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"bouyguescontruction.PNG",
+		"img_src":"bouyguesconstruction.PNG",
 		"answer1":"Fiducial",
 		"answer2":"Ikos",
-		"answer3":"Bouygues Contruction",
+		"answer3":"Bouygues Construction",
 		"correct-answer":"Bouygues Construction"
 	},
 
@@ -302,7 +302,7 @@ var debutant =
 	},
 	{
 		"logo-id":"",
-		"img_src":"elsi.PNG",
+		"img_src":"elis.PNG",
 		"answer1":"Segula Technologies",
 		"answer2":"Michelin",
 		"answer3":"Elis",
@@ -337,11 +337,11 @@ var debutant =
 
 	{
 		"logo-id":"",
-		"img_src":"espceurope.PNG",
-		"answer1":"ESPC Europe",
+		"img_src":"escpeurope.PNG",
+		"answer1":"ESCP Europe",
 		"answer2":"Telindus",
 		"answer3":"Swissquote",
-		"correct-answer":"ESPC Europe"
+		"correct-answer":"ESCP Europe"
 	},
 
 	{
@@ -450,7 +450,7 @@ var debutant =
 		"answer1":"Asymptote",
 		"answer2":"Royal Air Maroc",
 		"answer3":"Attijariwafa Bank",
-		"correct-answer":"Aussy"
+		"correct-answer":"Royal Air Maroc"
 	},
 
 	{
@@ -1226,11 +1226,32 @@ Array.prototype.contains = function(obj) {
     return false;
 }
 
+// send 
 
-// setInterval(function () {
-//   alert(window.isActive ? 'active' : 'La page se recharge après une inactivité longue.');
-//   $('#hello').append(isActive + '<br/>');
-// }, 6000);
+function get_ranking(mail, score)
+
+{
+ 
+
+		var requete = $.ajax({
+			url: "http://127.0.0.1:4300/classement"+"/"+mail+"/"+score,
+			type: "GET",
+			data: null,
+			dataType: "json",
+			success: function(){
+		        alert("HELOO");
+
+		        alert(requete.responseJSON);
+
+				if(requete.responseText != "false")
+				{
+
+				        alert(requete.responseText);
+
+				}
+			}
+		});
+}
 
 
 
