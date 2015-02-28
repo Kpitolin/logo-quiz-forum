@@ -37,6 +37,7 @@ function Main()
 
     game.global = {
     mail: 'kevino@gmail.com',
+    rank:0,
     score: 0,
     best_score: 0,
     currentLevel:0,
@@ -52,6 +53,7 @@ function Main()
     game.state.add("LevelSelect", levelSelect);
     game.state.add("PlayLevelSolo", playLevelSolo);    
     game.state.add("ScoreScreen", scoreScreen);
+    game.state.add("Ranking", ranking);
 
     // Start the first screen (chargement en cours)
     game.state.start("GameTitle");

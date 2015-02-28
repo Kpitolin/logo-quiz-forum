@@ -89,7 +89,7 @@ create: function ()
     // multi_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
     // multi_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + offset_y);
 
-    ranking_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
+    ranking_button = game.add.button(0,0, 'button', this.rankingClic, this);
     ranking_button.position = new PIXI.Point(solo_button.position.x,solo_button.position.y + offset_y);   
 
     // options_button = game.add.button(0,0, 'button', this.btnLevelClic, this);
@@ -139,6 +139,20 @@ create: function ()
     {
 
             game.state.start("LevelSelect"); // lance l'interface "niveau en cours de jeu"
+        
+    },
+
+    /**
+     * Clic sur le classement
+     * @param  {[type]} button [description]
+     * @return {[type]}        [description]
+     */
+
+
+    rankingClic:function(button)
+    {
+        game.state.start("Ranking"); 
+
         
     }
 

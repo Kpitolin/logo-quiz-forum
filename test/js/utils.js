@@ -40,7 +40,7 @@ var debutant =
 	
 	{
 		"logo-id":"",
-		"img_src":"alanallman.PNG",
+		"img_src":"alanallman.png",
 		"answer1":"Alan Allman",
 		"answer2":"Areva",
 		"answer3":"Avanade",
@@ -114,7 +114,7 @@ var debutant =
 		"logo-id":"",
 		"img_src":"asymptote.PNG",
 		"answer1":"Asymptote",
-		"answer2":"Allan Allaman",
+		"answer2":"Alan Allman",
 		"answer3":"Ausy",
 		"correct-answer":"Asymptote"
 	},
@@ -1236,21 +1236,28 @@ function get_ranking(mail, score)
 		var requete = $.ajax({
 			url: "http://127.0.0.1:4300/classement"+"/"+mail+"/"+score,
 			type: "GET",
-			data: null,
-			dataType: "json",
-			success: function(){
-		        alert("HELOO");
+			crossDomain: true,
+   		 success : function(content, statut){
 
-		        alert(requete.responseJSON);
+		        alert("success");
 
-				if(requete.responseText != "false")
-				{
+			game.global.rank = requete.responseJSON["rank"];
 
-				        alert(requete.responseText);
+	       },
 
-				}
-			}
+	       error : function(resultat, statut, erreur){
+	       			        alert("erreur  : "+erreur);
+
+         
+	       },
+
+   	     complete : function(resultat, statut){
+
+	       			        alert("complete " + resultat );
+
+       }
 		});
+
 }
 
 

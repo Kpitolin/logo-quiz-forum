@@ -292,6 +292,19 @@ create: function ()
 
 
             timer2.start();
+                        // We disable input for the answer buttons
+
+
+            for (var i = selectedAnswers.length - 1; i >= 0; i--) {
+              groupAnswers.getAt(selectedAnswers[i]).inputEnabled = false;
+
+
+            };
+
+
+
+
+
         }
 
   },
@@ -405,47 +418,54 @@ create: function ()
   validation:function (){
 
 
-          // We pause the timer for next element
-
-          // Double click error
-
-          // Bad response error
-
-           if (selectedAnswers.length == 1 && gameActive && this.correct(selectedAnswers))
-            {
-
-                groupAnswers.getAt(selectedAnswers).animations.play('correct');
 
 
+          var correct = false;
+ 
+          if (gameActive){
+               if( selectedAnswers.length ==1 ){
+                  this.correct(selectedAnswers) 
 
-            }
-            else if (selectedAnswers.length !=0 && !this.correct(selectedAnswers))
-            {
+                }
+                else
+                {
+                   this.correct();
+
+                }
+               if ( correct && selectedAnswers.length ==1)
+                {
+
+                    groupAnswers.getAt(selectedAnswers).animations.play('correct');
+
+
+
+                }
+
+                else if ( !correct && selectedAnswers.length ==1 )
+                {
+          
+
+                    groupAnswers.getAt(selectedAnswers).animations.play('false');
+                    groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+
+
+                }
+                else 
+                {
+                  groupAnswers.getAt(this.findCorrect()).animations.play('correct');
+
+                }
+
+            gameActive = false;
+
+            // We fire the timer for next element
+            timer3.start();
+
+
+          }
+
       
-
-                groupAnswers.getAt(selectedAnswers).animations.play('false');
-                groupAnswers.getAt(this.findCorrect()).animations.play('correct');
-
-
-
-            }
-            else
-            {
-              this.correct(); 
-              groupAnswers.getAt(this.findCorrect()).animations.play('correct');
-
-            }
-        
-
-
-    
-
-
-
-          gameActive = false;
-
-      // We fire the timer for next element
-      timer3.start();
 
 
   }
