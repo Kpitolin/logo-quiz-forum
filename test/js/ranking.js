@@ -85,13 +85,6 @@ ranking  = {
         this.rank_score_action();
 
 
-
-
-
-
-
-
-
     	/*We add the text to the buttons (we will use the local coordinate system for now on)*/
 
         back_button.addChild(back_text);
@@ -119,11 +112,7 @@ ranking  = {
 
     rank_score_action:function(){
 
-        // Retrieve data from server
-
-        get_ranking(game.global.mail, game.global.score); // synchronize best score with server
-
-
+   
 
 
         score_text = game.add.text(0,0, "Votre meilleur score est : "+ game.global.best_score+" point(s)", { font: "bold 15px Arial", fill: "black", align: "center" });
@@ -149,7 +138,9 @@ ranking  = {
            return  "Votre rang dans le classement : "+ game.global.ranking+this.postRankWord(game.global.ranking);
 
         }
+
         else
+
         {
             return "Vous n'êtes pas encore classé";
         }
