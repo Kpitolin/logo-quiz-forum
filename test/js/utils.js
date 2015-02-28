@@ -8,7 +8,6 @@ const const_offset_x_perc =5;
 
 var isActive;
 
-
 // game.load.text('assetList','path/to/file.json') 
 // JSON.parse(game.cache.getText('assetList')); 
 
@@ -1259,6 +1258,26 @@ function get_ranking(mail, score)
 		});
 
 }
+
+
+//   $(document).ready(function () {
+// var idleState = false;
+// var idleTimer = null;
+//         $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function () {
+//             clearTimeout(idleTimer);
+//             if (idleState == true) {
+//              // User is inactive
+
+//             }
+//             idleState = false;
+//             idleTimer = setTimeout(function () {
+
+
+//                 idleState = true; }, 2000);
+//         });
+//         $("body").trigger("mousemove");
+//     });
+ 
 
 
 

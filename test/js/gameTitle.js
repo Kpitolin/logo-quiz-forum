@@ -64,6 +64,8 @@ game.load.image('button', 'assets/blue-button-hi.png',100,32);
 create: function () 
 {
 
+
+
     offset_y = const_offset_y_perc*game.world.height/100;
 
 	/*
@@ -139,6 +141,10 @@ create: function ()
     {
 
             game.state.start("LevelSelect"); // lance l'interface "niveau en cours de jeu"
+                game.global.mail= login;
+    if (game.global.mail != undefined){
+        alert(game.global.mail);
+    }
         
     },
 
