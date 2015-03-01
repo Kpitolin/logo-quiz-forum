@@ -22,28 +22,45 @@
 
     
 </head>
-<!-- Placez ce script JavaScript asynchrone juste devant votre balise </body> -->
-    <script type="text/javascript">
-      (function() {
-       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-       po.src = 'https://apis.google.com/js/client:plusone.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-     })();
 
-    </script>
+	
+	
+	<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key:   778i2gxsujd5up
+    authorize: false
+    lang:      fr_FR
+	scope:	r_basicprofile r_emailaddress
+	</script>
+	
+	<script>
+
+
+
+        function onLinkedInLoad() {
+            IN.Event.on(IN, "auth", onLinkedInAuth);
+        }
+
+        // 2. Runs when the viewer has authenticated
+        function onLinkedInAuth() {
+
+            IN.API.Profile("me").fields("first-name", "last-name", "email-address").result(function (data) {
+                console.log(data["emailAddress"]);
+            }).error(function (data) {
+                console.log(data);
+            });
+		}
+	</script>
+	
+	
+	
 <body>
 
-    <div id="connexion-elements" style="text-align:center; vertical-align:middle; display:inline-block;">
-    <span id="signinButton" >
-      <span
-        class="g-signin"
-        data-callback="loginFinishedCallback"
-        data-clientid="1093971108847-71bekvquu6rtudta0qoo0hr7d40dgktm.apps.googleusercontent.com"
-        data-cookiepolicy="single_host_origin"
-        data-requestvisibleactions="http://schemas.google.com/AddActivity"
-        data-scope="https://www.googleapis.com/auth/plus.login">
-      </span>
-    </span>
-    <div>
+    <div id="connexion-elements" style="text-align:center;">
+    
+<script type="in/Login" data-onAuth="onLinkedInAuth">
+</script>
+	
+
+
 </body>
 </html>
