@@ -50,7 +50,7 @@
 
               console.log(login);
             }).error(function (data) {
-                console.log(data);
+                console.log("error"+data);
             });
 		}
 	</script>
@@ -60,22 +60,24 @@
 <body>
 
     <div id="connexion-elements" style="text-align:center;">
-    </div>
-	<div style="
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    margin: auto;
-    background-color: #ffffff;"
-    <!-- Full Center ON Page -->
+	<p>Forum Organisation vous pr&eacute;pare 	&agrave; l&#146;approche du Forum Rhône-Alpes. </p>
+	
 
-	<script type="in/Login" data-onAuth="onLinkedInAuth">
-	</script></div>
+        <div id="button" style="
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 167px;
+        height: 20px;
+        margin: auto;">
+
+        <script type="in/Login" data-onAuth="onLinkedInAuth">
+        </script>
+        </div>
+    </div>
 	
 
 
