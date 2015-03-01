@@ -161,7 +161,7 @@ scoreScreen  = {
 
         // Send info to server
 
-        get_ranking(game.global.mail, game.global.score); // synchronize best score with server
+        get_ranking(game.global.mail, game.global.score,urlOfServer); // synchronize best score with server
 
         // Reset the score and progress
         game.global.score = 0;

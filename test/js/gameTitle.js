@@ -19,6 +19,9 @@ var ranking_text;
 var options_button;
 var options_text;
 
+var timerShowButtons;
+
+
 gameTitle = {
 
 
@@ -81,8 +84,9 @@ create: function ()
 	   header_text.position.y = logo_image.position.y + 2*offset_y;
        header_text.position.x = game.world.width/2-header_text.width/2;
 
+    timer2 = this.game.time.events.loop(Phaser.Timer.SECOND , this.showButtons , this);
+
     
-    this.showButtons();
 
 
 
@@ -103,10 +107,7 @@ create: function ()
     {
 
             game.state.start("LevelSelect"); // lance l'interface "niveau en cours de jeu"
-               // game.global.mail= login;
-    if (game.global.mail != undefined){
-        alert(game.global.mail);
-    }
+
         
     },
 

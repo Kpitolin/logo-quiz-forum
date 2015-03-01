@@ -42,9 +42,13 @@
 
         // 2. Runs when the viewer has authenticated
         function onLinkedInAuth() {
+            loggedIn = true;
 
             IN.API.Profile("me").fields("first-name", "last-name", "email-address").result(function (data) {
-                console.log(data["emailAddress"]);
+
+              login = data["values"]["emailAddress"];
+
+              console.log(login);
             }).error(function (data) {
                 console.log(data);
             });

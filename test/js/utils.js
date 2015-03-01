@@ -7,6 +7,8 @@ const const_offset_y_perc =10;
 const const_offset_x_perc =5;
 var loggedIn=false;	
 var isActive;
+var login;
+const urlOfServer = "http://nodejs-logoquizforum.rhcloud.com:8080/classement";
 
 // game.load.text('assetList','path/to/file.json') 
 // JSON.parse(game.cache.getText('assetList')); 
@@ -1227,17 +1229,17 @@ Array.prototype.contains = function(obj) {
 
 // send 
 
-function get_ranking(mail, score)
+function get_ranking(mail, score, urlOfServer)
 
 {
  
 
 		var requete = $.ajax({
-			url: "http://127.0.0.1:4300/classement"+"/"+mail+"/"+score,
+			url: urlOfServer+"/"+mail+"/"+score,
 			type: "GET",
 			crossDomain: true,
    		 success : function(content, statut){
-
+   		 	
 
 			  game.global.rank = requete.responseJSON["rank"];
 
@@ -1294,9 +1296,7 @@ function get_ranking(mail, score)
     var el = document.getElementById('email');
     var email = '';
 
-    if (obj['email']) {
-      alert(obj['email']);
-    }
+
 
     //console.log(obj);   // Retirer les commentaires pour inspecter l'objet complet.
 
@@ -1311,6 +1311,8 @@ function get_ranking(mail, score)
     } else {
       el.setAttribute('class', 'hide');
       	    loggedIn = true;
+      	    location.reload();
+
 
     }
   }
